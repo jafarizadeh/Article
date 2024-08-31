@@ -93,4 +93,21 @@ This entire process highlights the critical role MAC addresses play in ensuring 
 
 Cisco switches are effective at managing network traffic effectively, largely thanks the way they use MAC addresses. This section discusses how these switches utilize MAC. It also highlights the MAC address table is so significant in this operation.
 
+
+\subsection*{How Cisco Switches Utilize MAC Addresses}
+
+Cisco switches depend on MAC addresses to make sure data packets arrive at the right place in a local area network (LAN). When they receive an Ethernet frame, they check both the source and destination MAC addresses. This helps the switch decide what to do next. Here’s a closer look at how Cisco switches utilize MAC addresses:
+
+\begin{enumerate}
+    \item \textbf{Frame Forwarding:} When a data frame comes in, the switch looks at the destination MAC address. If it recognizes it and has it linked to a certain port in its MAC address table, it sends the frame only to that port. This way, there's less unnecessary network traffic. It makes everything more efficient.
+
+    \item \textbf{Learning Process:} Cisco switches also learn about the MAC addresses of devices connected to each port over time. Whenever a frame gets to a specific port, the switch records the source MAC address and links it with that port. This learning helps keep the MAC address table current. It's important for forwarding frames correctly.
+
+    \item \textbf{Broadcast Handling:} If the destination MAC address isn’t found in the table, the switch broadcasts the frame to all ports except the one it originated from. This ensures that the frame reaches its intended device. The device will then respond, allowing the switch to learn and record its MAC address for future use.
+
+    \item \textbf{Security Features:} Additionally, Cisco switches use MAC addresses for supporting various security measures. Features like port security allow administrators to limit which devices can connect to certain ports based on their MAC addresses. This is vital for preventing unauthorized access and improving overall network safety.
+
+\end{enumerate}
+
+
 \end{document}
