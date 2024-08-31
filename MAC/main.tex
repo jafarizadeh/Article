@@ -58,7 +58,6 @@ A MAC address is a 48-bit identifier. It is typically shown in two formats: six 
 
 This identifier has two main parts:
 
-
 \begin{enumerate}
     
     \item \textbf{Organizationally Unique Identifier (OUI):} The first 24 bits, known as the OUI, represent the first three octets. The IEEE assigns this segment to the manufacturer of the network device. It helps indicate the source of the hardware.
@@ -66,6 +65,27 @@ This identifier has two main parts:
     \item \textbf{Device Identifier:} The last 24 bits, or the final three octets, are uniquely assigned by the manufacturer to each device. This process ensures that every MAC address from that manufacturer is distinct.
 
 \end{enumerate}
+
+
+Together, these two parts—the OUI and device identifier—ensure that every network interface controller (NIC) worldwide has a unique MAC address. This uniqueness is foundational for reliable network communication.\footnote{\href{https://standards.ieee.org/products-programs/regauth/mac.html}{\textit{IEEE Standards Association: MAC Address Structure}}}
+
+\subsection*{How MAC Addresses Function in a Network}
+
+In any network, MAC addresses are for identifying devices and communication. When one wants to send information to another in the same local area network (LAN), it needs the recipient's MAC address. This ensures that the data Is correctly delivered The process is outlined as follows:
+
+\begin{enumerate}
+    
+    \item \textbf{Address Resolution Protocol (ARP):} Before sending data, a device uses ARP. This protocol helps map the recipient's IP address to its MAC address. ARP sends out a request to all devices in the network, and then the device with the matching IP address replies back with its MAC address.
+
+    \item \textbf{Data Transmission:} After learning the recipient’s MAC address, the sending device encapsulates the data packet into an Ethernet frame with that MAC address. This frame then gets transmitted via network switches.
+
+    \item \textbf{Switch Operation:} When a switch gets a data frame, it looks at the destination MAC address. It checks its MAC address table to find out which port to use for sending it on. If it doesn't find the address in its table, it sends the frame out to every port except for the one it came in on. This way, it can still reach who it's meant for.
+
+
+    \item \textbf{Learning and Forwarding:} As switches handle more data traffic, they continually build their MAC address table by recording each incoming frame’s source MAC address and linking it to the corresponding switch port. This ongoing learning process enhances network efficiency by allowing switches to send frames specifically to the correct ports, thereby reducing unnecessary network traffic.
+
+\end{enumerate}
+
 
 
 \end{document}
