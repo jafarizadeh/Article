@@ -182,6 +182,8 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
 INPUT C:\Users\Lord\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT main.aux
@@ -189,6 +191,8 @@ INPUT .\main.out
 INPUT .\main.out
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
