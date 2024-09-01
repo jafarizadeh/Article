@@ -290,6 +290,32 @@ Troubleshooting issues with MAC addresses is crucial for keeping a network stabl
             \item A broadcast storm may occur if a switch continuously sends broadcast frames because it cannot find the correct destination MAC address. This situation floods the network and causes significant performance problems.\footnote{\href{https://netseccloud.com/troubleshooting-common-issues-with-cisco-mac-address-tables}{\textit{Troubleshooting MAC Address Issues}}}
         \end{itemize}
 
+
+\subsection*{Debugging and Monitoring Techniques}
+\begin{enumerate}
+        \item \textbf{Using the \lstinline{show mac address-table} Command:}
+    \begin{itemize}
+        \item A key tool for monitoring the MAC address table is the \lstinline{show mac address-table} command. It provides a clear view of current MAC entries and can be filtered to review specific VLANs, addresses, or interfaces.
+    \end{itemize}
+
+    \item \textbf{Port Monitoring with \lstinline{SPAN}:}
+        \begin{itemize}
+            \item Cisco switches have a feature called Switched Port Analyzer (SPAN). This lets administrators check traffic on certain ports or VLANs. It’s highly effective for finding out problems with MAC addresses because it shows what traffic is being sent and received.
+        \end{itemize}
+
+    \item \textbf{Debugging Commands:}
+        \begin{itemize}
+            \item The \lstinline{debug ethernet mac} command helps diagnose issues with MAC addresses on the switch. However, use this command with caution, as it can generate a significant amount of output that might impact switch performance.
+        \end{itemize}
+
+    \item \textbf{Reviewing Log Files:}
+        \begin{itemize}
+            \item Log files are useful for obtaining information on MAC address errors. The \lstinline{show logging} command allows you to review recent log entries for any indications of MAC address issues.\footnote{\href{https://netseccloud.com/how-to-manage-and-troubleshoot-the-cisco-mac-address-table}{\textit{Debugging Techniques for MAC Addresses}}}
+        \end{itemize}
+
+\end{enumerate}
+
+
 \end{enumerate}
 
 \end{document}

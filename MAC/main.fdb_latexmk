@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725149100.32745 "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" "main.pdf" "main" 1725149100.86799 0
+["pdflatex"] 1725149133.54673 "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" "main.pdf" "main" 1725149134.09983 0
   "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725142087 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lord/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725139274 24224574 dc7f1ddfa7aa0d1a39bc372d14d1d367 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -34,6 +34,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr8.tfm" 1256929440 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr9.tfm" 1256929440 11884 c93929a6974dce79eabb778f219d7e18 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmri9.tfm" 1256929440 16968 4675b6ed6aaa9b6b1446f80f565cd449 ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtk10.tfm" 1256929440 1336 cd5d5949a1a8258ba2142355fab78e6f ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtt10.tfm" 1256929440 1340 adaa94f9add991a099a6fc98bbb5f02c ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ts1-lmr10.tfm" 1256929440 1556 b86d923e6b2f9aab2e313098a95cb0b8 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
@@ -44,6 +45,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb" 1256929440 123394 992f5e87d698d9e94717394c62580ea6 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb" 1256929440 122174 a2d5e73f396ddbeb3bdf5c79aea0993d ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb" 1256929440 109598 c83a0202c1f22acb1242fa66ec5da7de ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb" 1256929440 117319 28a05fff1cac98366062ffbb2e22858d ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb" 1256929440 113227 d3d1adc024746ff57b20efba82c6d365 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -112,10 +114,10 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" 1725149099 21462 2f5872da8f971f02b5ae15abe0f5d5d2 ""
-  "main.aux" 1725149100 162 1048d5a6ab834159417e60c8f895d4f4 "pdflatex"
-  "main.out" 1725149100 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1725149099 21462 2f5872da8f971f02b5ae15abe0f5d5d2 ""
+  "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" 1725149132 23082 9f4dd7d5ec7d401c50d75648a77e4ba5 ""
+  "main.aux" 1725149133 162 8041607b76d73e3dcbdb7e912bad98fd "pdflatex"
+  "main.out" 1725149133 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1725149132 23082 9f4dd7d5ec7d401c50d75648a77e4ba5 ""
   (generated)
   "main.aux"
   "main.log"
