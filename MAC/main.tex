@@ -133,4 +133,19 @@ The structure and functionality of this table are crucial for guaranteeing that 
 The MAC address table in Cisco switches is integral to for the efficient and secure operations of networks. This section explores how Cisco switches create the MAC table, make forwarding and filtering decisions, and manage the retention of MAC addresses in the table.
 
 
+\subsection*{Learning Process: Building the MAC Table}
+
+Cisco switches build and maintain the MAC address table through a dynamic learning process. This method is crucial to ensuring frames are directed to the correct destinations within the network. Here’s how this process works:
+
+\begin{enumerate}
+    
+    \item \textbf{Frame Reception:} When an Ethernet frame comes into a Cisco switch on a specific port, it examines the source MAC address found inside that frame.
+
+    \item \textbf{Updating the Table:} Next, the switch checks its MAC address table to see if this source MAC address is already linked to any port. If it isn’t in the table, the switch adds a new entry. This entry connects that MAC address to the port it was received on. This mapping enables the switch to forward future frames intended for that MAC address to the correct port.
+
+    \item \textbf{Continuous Learning:} As more frames are received, the switch continuously updates its MAC address table, adding new entries or modifying existing ones if devices move to different ports. This ongoing learning process keeps the table accurate and reflective of the current network topology.\footnote{\href{https://learningnetwork.cisco.com/s/article/mac-address-learing-pdf}{\textit{Cisco Systems: MAC Address Learning Process}}}
+
+\end{enumerate}
+
+
 \end{document}
