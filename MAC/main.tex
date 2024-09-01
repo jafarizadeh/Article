@@ -181,4 +181,14 @@ To maintain the MAC address table from being too big or old-fashioned, Cisco swi
 
 Cisco switches allow administrators to manage MAC addresses efficiently. They can configure both and dynamic entries based on the needs of the network. In this section, we will explore the difference between static and dynamic MAC address entries, provide a guide for setting up static MAC addresses, and detail how to confirm these settings.
 
+
+\subsection*{Static vs. Dynamic MAC Address Entries}
+
+\textbf{Dynamic MAC Address Entries:} These entries are learned automatically by the switch as devices communicate. When a frame arrives, the switch stores the source MAC address along with the port it was received on. This creates a dynamic entry in the MAC address table. However, these entries are temporary and can be removed after a certain period of inactivity. Dynamic entries are ideal for environments where devices frequently connect and disconnect.
+\newline
+\newline
+\textbf{Static MAC Address Entries:} Unlike dynamic entries, these are manually configured by the network administrator. They are stored permanently in the MAC address table. Static entries do not age out; they remain until they are deleted or if the switch is restarted. Static entries are typically used for devices that require a stable connection, such as servers or printers. This ensures that the switch consistently knows which port these critical devices are connected to, reducing the likelihood of disruptions.\footnote{\href{https://learnduty.com/network-techs/dynamic-vs-static-mac-address-explained-configuration/}{\textit{Dynamic and Static MAC Address}}}
+
+
+
 \end{document}
