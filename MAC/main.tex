@@ -481,5 +481,16 @@ Effective MAC address management is essential for maintaining secure and smoothl
     \end{itemize}
 
 
-    
+    \subsection*{Recommendations for Network Engineers}
+    \begin{enumerate}
+        \item \textbf{Utilize Port Security:} Implement port security to control which devices can connect to the network and limit the number of MAC addresses per port. This not only secures the network but also helps manage the MAC address table more effectively.
+        \item \textbf{Monitor and Maintain the MAC Address Table:} Regular monitoring of the MAC address table is essential. Adjust aging timers as needed and remove outdated entries to prevent overflow and maintain optimal performance.
+        \item \textbf{Deploy Static MAC Entries for Critical Devices:} For key devices, such as servers that require a stable connection, configure static MAC entries. This ensures reliable connectivity and reduces the risk of conflicts within the dynamic MAC address table.
+        \item \textbf{Plan for Network Growth:} As networks expand, segment them using VLANs to reduce the size of broadcast domains. This strategy helps manage the MAC address table efficiently and prevents potential performance slowdowns.
+        \item \textbf{Strengthen Network Security:} Use advanced features such as Dynamic ARP Inspection and MAC filtering to defend against attacks like MAC spoofing and flooding, thereby boosting overall network security.
+    \end{enumerate}
+
+By following these best practices, network engineers can effectively manage MAC addresses in Cisco environments, leading to robust network performance and enhanced security.\footnote{\href{https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/best/practices/recommendations.html}{\textit{Preventing MAC Spoofing Attacks}}}
+
+
 \end{document}
