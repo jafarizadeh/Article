@@ -290,6 +290,7 @@ Troubleshooting issues with MAC addresses is crucial for keeping a network stabl
             \item A broadcast storm may occur if a switch continuously sends broadcast frames because it cannot find the correct destination MAC address. This situation floods the network and causes significant performance problems.\footnote{\href{https://netseccloud.com/troubleshooting-common-issues-with-cisco-mac-address-tables}{\textit{Troubleshooting MAC Address Issues}}}
         \end{itemize}
 
+\end{enumerate}
 
 \subsection*{Debugging and Monitoring Techniques}
 \begin{enumerate}
@@ -315,6 +316,27 @@ Troubleshooting issues with MAC addresses is crucial for keeping a network stabl
 
 \end{enumerate}
 
+\subsection*{Best Practices for Managing MAC Address Tables}
+\begin{enumerate}
+    \item \textbf{Regular Monitoring:}
+        \begin{itemize}
+            \item Regularly monitor the MAC address table to ensure optimal performance. This proactive approach helps identify issues like table overflow or incorrect entries before they escalate into larger problems.
+        \end{itemize}
+
+    \item \textbf{Adjusting the Aging Timer:}
+        \begin{itemize}
+            \item Consider adjusting the aging timer based on your network setup. In highly active networks, a shorter aging time can help prevent outdated entries from causing issues. Conversely, a longer time may be more appropriate for stable networks.
+        \end{itemize}
+
+    \item \textbf{Using Static MAC Entries Where Necessary:}
+        \begin{itemize}
+            \item For critical devices that require a consistent connection, configure static MAC entries to prevent potential issues with dynamic learning. This is especially vital for devices like servers or other essential equipment.
+        \end{itemize}
+
+    \item \textbf{Implementing Port Security:}
+        \begin{itemize}
+            \item Utilize Cisco's port security features to limit how many MAC addresses can connect through one port. This helps avoid overflow in the MAC address table and boosts security by only allowing access to select devices.
+        \end{itemize}
 
 \end{enumerate}
 
