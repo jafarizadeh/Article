@@ -203,6 +203,11 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.
 INPUT C:\Users\Lord\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmtt.fd
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmtt.fd
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmtt.fd
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmtt10.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rmtt.enc
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -222,3 +227,5 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri9.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri9.pfb
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb

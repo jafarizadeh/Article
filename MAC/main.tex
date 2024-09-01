@@ -109,5 +109,22 @@ Cisco switches depend on MAC addresses to make sure data packets arrive at the r
 
 \end{enumerate}
 
+\subsection*{MAC Address Table: A Vital Element}
+
+The MAC address table, often referred to as Content Addressable Memory (CAM) table in Cisco switches, plays an essential role in network operations. Within this table lies the crucial mappings of MAC addresses to ports, which enables efficient packet forwarding and minimizes congestion.
+
+\begin{enumerate}
+    \item \textbf{Table Structure:} Each entry in the MAC address table links a MAC address with a specific port number on the switch. Typically, each entry includes the MAC address, its associated port number, and VLAN ID if VLANs are applied.
+
+    \item \textbf{Dynamic Learning:} As mentioned earlier, Cisco switches dynamically build this table through their learning process. By observing frames traversing the network, they continuously update the table to accurately reflect changes in the network topology, such as when devices are added or moved.
+
+    \item \textbf{Aging Process:} To maintain efficiency, the MAC address table undergoes an aging process. Entries are removed after being inactive for a specified period. This process prevents outdated information from cluttering the table, ensuring that only relevant records are retained.
+
+    \item \textbf{Troubleshooting and Management:} Network admins can view and manage the MAC address table conveniently using Cisco's command-line interface (CLI). Commands such as \lstinline{show mac address-table} assist administrators in confirming which MAC addresses pair with which ports, Assisting with for troubleshooting and management tasks.
+
+\end{enumerate}
+
+The structure and functionality of this table are crucial for guaranteeing that Cisco switches operate efficiently and securely—acting as a foundation for effective communication and management within networks.
+
 
 \end{document}
