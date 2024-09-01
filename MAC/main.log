@@ -545,7 +545,7 @@ ith its spe-cific in-ter-face (e.g., [][]
  []
 
 [6{C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-(main.aux)
+[7] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -554,9 +554,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12457 strings out of 474486
- 189020 string characters out of 5744227
- 1983542 words of memory out of 5000000
+ 12466 strings out of 474486
+ 189112 string characters out of 5744227
+ 2007542 words of memory out of 5000000
  34504 multiletter control sequences out of 15000+600000
  608187 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -570,9 +570,9 @@ ers/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users
 /Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Lo
 rd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Lord
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (6 pages, 273337 bytes).
+Output written on main.pdf (7 pages, 276191 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

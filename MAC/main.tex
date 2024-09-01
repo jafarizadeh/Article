@@ -239,4 +239,34 @@ write memory
 
 \end{enumerate}
 
+
+\subsection*{Verifying MAC Address Configurations}
+After configuring static MAC addresses, it is essential to verify that the settings are correct. Use the following commands:
+
+\begin{enumerate}
+    \item \textbf{Display the MAC Address Table:}
+        \begin{itemize}
+            \item To view all entries in the MAC address table, use:
+\begin{lstlisting}
+show mac address-table
+\end{lstlisting}
+            \item This command displays both dynamic and static entries, along with their associated VLANs and interfaces.
+        \end{itemize}
+        
+    \item \textbf{Filter Results:}
+        \begin{itemize}
+            \item To view specific entries, use:
+\begin{lstlisting}
+show mac address-table address <MAC-ADDRESS>
+\end{lstlisting}
+            \item Replace \lstinline{<MAC-ADDRESS>} with you want to.
+        \end{itemize}
+
+    \item \textbf{Verify Static Entries:}
+        \begin{itemize}
+            \item To check that your static entries are correctly configured, use: \lstinline{show mac address-table static}. This command displays only the manually configured static entries.            
+        \end{itemize}
+\end{enumerate}
+
+
 \end{document}
