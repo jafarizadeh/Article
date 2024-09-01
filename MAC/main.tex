@@ -395,6 +395,31 @@ MAC address flooding attacks are serious threats to network safety. In these att
     Managing MAC address flooding attacks requires a combination of proactive and reactive strategies to maintain network security and efficiency.\footnote{\href{https://www.interserver.net/tips/kb/mac-flooding-prevent/}{\textit{MAC Address Flooding Attacks}}}
     
 
+    \subsubsection*{Enhancing Network Performance Through Efficient MAC Address Management}
+    Efficient MAC address management is essential for optimizing network performance, particularly in large and dynamic environments. Effective management reduces congestion and latency while improving overall efficiency.
+    
+    \begin{enumerate}
+        \item \textbf{Regular Maintenance of the MAC Address Table:}
+            \begin{itemize}
+                \item Regularly check the MAC address table and remove outdated or incorrect entries. This practice ensures that switches make accurate and efficient forwarding decisions.
+            \end{itemize}
+        \item \textbf{Optimizing Aging Time:}
+            \begin{itemize}
+                \item Adjust the MAC address aging time according to network conditions. In environments where devices frequently move, shorter aging times are beneficial; in more stable networks, longer periods are appropriate.
+            \end{itemize}
+        \item \textbf{Implementing VLAN Segmentation:}
+            \begin{itemize}
+                \item Segment networks using VLANs to reduce the size of broadcast domains and the number of addresses switches must manage. This approach leads to faster lookups and better traffic control.
+            \end{itemize}
+        \item \textbf{Load Balancing Across Switches:}
+            \begin{itemize}
+                \item Distribute network traffic evenly across multiple switches to prevent any single switch from becoming overloaded, thereby improving performance and maintaining manageable switch tables.
+            \end{itemize}
+        \item \textbf{Regularly Update Firmware:}
+            \begin{itemize}
+                \item Keep switch firmware up to date to take advantage of performance enhancements and security fixes, which contribute to better MAC address management and prevent issues such as table overflow or other performance problems.
+            \end{itemize}
+    \end{enumerate}
 
 
 
