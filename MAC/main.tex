@@ -148,4 +148,18 @@ Cisco switches build and maintain the MAC address table through a dynamic learni
 \end{enumerate}
 
 
+\subsection*{Forwarding and Filtering Decisions}
+
+Once the table is populated, Cisco switches utilize this table to make forwarding and filtering choices, quite crucial for managing network traffic well.
+\begin{enumerate}
+    
+    \item \textbf{Forwarding Frames:} When they receive a frame, switches check its destination MAC address in their table. If there's a match, they forward it only to the port with that MAC address. This direct forwarding cuts down unnecessary network traffic and enhances efficiency.
+
+    \item \textbf{Filtering Frames:} If the destination MAC address is not found in the table, the switch must decide how to handle the frame. Typically, the switch floods the frame to all ports except the one it was received on, ensuring it reaches its destination. Additionally, Cisco switches can be configured with specific rules to drop frames based on their MAC addresses, thereby enhancing both security and performance.
+
+    \item \textbf{Handling Broadcast and Multicast Traffic:} For broadcast and multicast traffic—meant for several devices—there's a different approach. Cisco switches automatically send broadcast frames to all ports. Meanwhile, multicast frames are sent based on how their group is set up and what’s in the MAC address table.\footnote{\href{https://www.cisco.com/c/en/us/support/docs/routers/12000-series-routers/47321-ciscoef.html}{\textit{Forwarding and Filtering Decisions}}}
+
+\end{enumerate}
+
+
 \end{document}
