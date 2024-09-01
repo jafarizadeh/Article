@@ -162,4 +162,20 @@ Once the table is populated, Cisco switches utilize this table to make forwardin
 \end{enumerate}
 
 
+\subsection*{Aging Process of MAC Addresses}
+
+To maintain the MAC address table from being too big or old-fashioned, Cisco switches use an aging method for these entries.
+
+\begin{enumerate}
+
+    \item \textbf{Aging Timer:} Every entry has an aging timer attached. Cisco switches usually set this timer at 300 seconds (or 5 minutes). If a MAC address isn’t seen during this period, it's considered stale and removed from the table.
+
+\item \textbf{Refreshing Entries:} If a frame with a source MAC address already in the table is received, the switch resets the aging timer for that entry. This process ensures that active devices remain in the MAC address table, while inactive or disconnected devices are eventually removed.
+
+\item \textbf{Impact of Aging:} The aging process helps maintain optimal switch performance by controlling the size of the MAC address table. It ensures that the table accurately reflects current network conditions, allowing the switch to respond appropriately when devices move or are removed.
+
+\item \textbf{Configuring Aging Time:} Network administrators can adjust the aging time based on specific network requirements. Shorter aging times may be more appropriate for dynamic environments, while longer times might be better suited for more stable networks. Proper configuration of the aging timer is crucial for maintaining an efficient and responsive network.\footnote{\href{https://community.cisco.com/t5/networking-knowledge-base/network-switching-operation/ta-p/4193160}{\textit{MAC Address Table Aging Process}}}
+\end{enumerate}
+
+
 \end{document}
