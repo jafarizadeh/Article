@@ -190,5 +190,53 @@ Cisco switches allow administrators to manage MAC addresses efficiently. They ca
 \textbf{Static MAC Address Entries:} Unlike dynamic entries, these are manually configured by the network administrator. They are stored permanently in the MAC address table. Static entries do not age out; they remain until they are deleted or if the switch is restarted. Static entries are typically used for devices that require a stable connection, such as servers or printers. This ensures that the switch consistently knows which port these critical devices are connected to, reducing the likelihood of disruptions.\footnote{\href{https://learnduty.com/network-techs/dynamic-vs-static-mac-address-explained-configuration/}{\textit{Dynamic and Static MAC Address}}}
 
 
+\subsection*{Configuring Static MAC Addresses: Step-by-Step Guide}
+
+To configure static MAC addresses on a Cisco switch, perform these steps:
+
+
+\begin{enumerate}
+    \item \textbf{Access the Switch:}
+        \begin{itemize}
+            \item Connect to the Cisco switch via SSH or using a console cable.
+            \item Enter privileged EXEC mode by typing enable and entering your password.
+        \end{itemize}
+    \item \textbf{Enter Global Configuration Mode:}
+        \begin{itemize}
+            \item Type configure terminal to enter global configuration mode.
+        \end{itemize}
+    \item \textbf{Configure the Static MAC Address:}
+        \begin{itemize}
+            \item Use the following command to add a static MAC address entry:
+
+\begin{lstlisting}
+mac address-table static <MAC-ADDRESS> vlan <VLAN-ID> interface <INTERFACE-ID>
+\end{lstlisting}
+
+            \item Replace \lstinline{<MAC-ADDRESS>} with your desired MAC address. Substitute \lstinline{<VLAN-ID>} with the VLAN for that device and \lstinline{<INTERFACE-ID>} with its specific interface (e.g., \lstinline{GigabitEthernet0/1}).
+            
+            Example of Command:
+
+\begin{lstlisting}
+mac address-table static 00A1.B2C3.D4E5 vlan 10 interface GigabitEthernet0/1
+\end{lstlisting}
+\end{itemize}
+    \item \textbf{Exit Configuration Mode:}
+        \begin{itemize}
+            \item Type \lstinline{exit} to leave configuration mode.
+
+        \end{itemize}
+
+    \item \textbf{Save Your Configuration:}
+        \begin{itemize}
+            \item To ensure your changes are preserved after a reboot, type:
+\begin{lstlisting}
+write memory
+\end{lstlisting}
+
+            \item Alternatively, you can use \lstinline{copy running-config startup-config}
+\end{itemize}
+
+\end{enumerate}
 
 \end{document}
