@@ -377,6 +377,13 @@ Both port security and MAC filtering are crucial for ensuring network security a
 \subsection*{Managing MAC Address Flooding Attacks}
 MAC address flooding attacks are serious threats to network safety. In these attacks, an attacker overwhelms the switch with fake MAC addresses, causing its address table to overflow. When this table reaches capacity, the switch ultimately floods all frames to every port, leading to network congestion and increasing the risk of data breaches.
 
+\subsubsection*{Preventive Measures:}
+    \begin{enumerate}
+        \item \textbf{Implement Port Security:} By limiting the number of MAC addresses each port can learn, you reduce the likelihood of a flooding attack. When the limit is reached, the switch can drop any new potentially harmful addresses.
+        \item \textbf{Use Private VLANs:} By using Private VLANs (PVLANs), you isolate ports within a single VLAN which stops direct communication among devices. Compromised devices remain cut off from other parts of the network.
+        \item \textbf{Enable Dynamic ARP Inspection (DAI):} DAI helps guard against ARP spoofing attacks by examining and validating ARP requests before they go through the switch. Only legitimate ARP communications are allowed which cuts down on flooding attack effectiveness.
+        \item \textbf{Monitor and Analyze Traffic:} Keeping an eye on traffic patterns helps catch unusual activity that might indicate an ongoing flooding attack early on. Tools like Cisco's SPAN and RSPAN can mirror traffic so that admins can analyze potential problems 
+    \end{enumerate}
 
 
 
