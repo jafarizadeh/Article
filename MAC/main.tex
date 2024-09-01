@@ -273,5 +273,23 @@ show mac address-table address <MAC-ADDRESS>
 
 Troubleshooting issues with MAC addresses is crucial for keeping a network stable. This part discusses common problems with MAC address tables, techniques  debug and monitor them, as well as best practices for managing these tables on Cisco switches.\footnote{\href{https://www.cisco.com/c/fr_ca/support/docs/switches/catalyst-9300-series-switches/222060-troubleshoot-mac-address-table-manager-o.html?dtid=osscdc000283}{\textit{Troubleshooting Mac Address Table}}}
 
+\subsection*{Common MAC Address Table Issues}
+\begin{enumerate}
+    \item \textbf{MAC Address Table Overflow:}
+        \begin{itemize}
+            \item Sometimes, the MAC address table in a switch reaches capacity. When this happens, the switch cannot learn any new MAC addresses. This can degrade network performance and even cause security threats. It often occurs in large or busy networks where many devices frequently connect and disconnect.
+        \end{itemize}
+
+    \item \textbf{Incorrect MAC Address Entries:}
+        \begin{itemize}
+            \item When there are incorrect or outdated MAC address entries, frames might be sent to the wrong port, resulting in communication errors. Such issues can occur when devices change ports or due to issues with entry aging.
+        \end{itemize}
+
+    \item \textbf{Broadcast Storms:}
+        \begin{itemize}
+            \item A broadcast storm may occur if a switch continuously sends broadcast frames because it cannot find the correct destination MAC address. This situation floods the network and causes significant performance problems.\footnote{\href{https://netseccloud.com/troubleshooting-common-issues-with-cisco-mac-address-tables}{\textit{Troubleshooting MAC Address Issues}}}
+        \end{itemize}
+
+\end{enumerate}
 
 \end{document}
