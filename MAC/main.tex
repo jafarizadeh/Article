@@ -340,4 +340,36 @@ Troubleshooting issues with MAC addresses is crucial for keeping a network stabl
 
 \end{enumerate}
 
+
+
+
+\section*{Advanced Topics: Security and Performance}
+
+As networks become more complex, effective address management is vital for both security and performance. This section explores advanced topics in MAC address security, addressing MAC address flooding attacks, and improving network performance through efficient MAC address management.
+
+\subsection*{MAC Address Security: Port Security and MAC Filtering}
+\subsubsection*{Port Security:}
+In Cisco switches, port security allows network managers to limit the number of MAC addresses that can connect through a specific port. By configuring port security, managers can control which devices are allowed to access the network, thereby preventing unauthorized devices from connecting.
+
+\begin{enumerate}
+    \item \textbf{Static MAC Address Binding:} Administrators have the option to manually bind specific MAC addresses to a port. This ensures that only approved devices can connect. If an unapproved device attempts to use that port, it results in a violation. Such violations can trigger actions like shutting down the port or sending out an alert.
+    \item \textbf{Limiting MAC Address Learning:} With port security, you can set a maximum number of MAC addresses for a given port. If this limit is exceeded, the switch has several options: it can drop new traffic, disable the port, or place it in a restricted state.
+    \item \textbf{Violation Modes:} Cisco switches offer various violation modes to manage security breaches:
+        \begin{itemize}
+            \item \textbf{Protect:} Drops packets with unknown MAC addresses without triggering alerts.
+            \item \textbf{Restrict:} Drops packets, logs violations, but keeps the port active.
+            \item \textbf{Shutdown:} Disables the port when a violation occurs; this is the default mode.
+        \end{itemize}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
