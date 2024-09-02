@@ -7,6 +7,7 @@
 \usepackage{hyperref} 
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{multicol}
 
 \lstset{
   backgroundcolor=\color{gray!30},  
@@ -20,9 +21,12 @@
 }
 
 
+
 \title{Media Access Control (MAC)}
 \author{Mehdi JAFARIZADEH}
 \date{June 29, 2024}
+
+
 
 \begin{document}
 
@@ -42,7 +46,7 @@ In networking, a Media Access Control (MAC) address plays a crucial role. It ena
 
 MAC addresses are often called hardware addresses. They are 48-bit identifiers, usually shown as six pairs of hexadecimal digits like 00:1A:2B:3C:4D:5E. Each network device—whether it's a computer, router, switch, or smartphone—has its own unique MAC address. This number helps it distinguish from other devices in the same network.
 
-The first three octets of a MAC are set by the IEEE to show the manufacturer. The last three octets are given by that manufacturer to keep things unique within their products.\footnote{\href{https://standards.ieee.org/products-programs/regauth/}{\textit{IEEE Registration Authority: MAC Address}}}
+The first three octets of a MAC are set by the IEEE to show the manufacturer. The last three octets are given by that manufacturer to keep things unique within their products~\cite{IEEE-Registration-Authority}.
 
 
 \subsection*{Importance of MAC Addresses in Networking}
@@ -71,7 +75,7 @@ This identifier has two main parts:
 \end{enumerate}
 
 
-Together, these two parts—the OUI and device identifier—ensure that every network interface controller (NIC) worldwide has a unique MAC address. This uniqueness is foundational for reliable network communication.\footnote{\href{https://standards.ieee.org/products-programs/regauth/mac.html}{\textit{IEEE Standards Association: MAC Address Structure}}}
+Together, these two parts—the OUI and device identifier—ensure that every network interface controller (NIC) worldwide has a unique MAC address. This uniqueness is foundational for reliable network communication~\cite{IEEE-Standards-Association}
 
 \subsection*{How MAC Addresses Function in a Network}
 
@@ -139,7 +143,7 @@ The MAC address table in Cisco switches is integral to for the efficient and sec
 
 \subsection*{Learning Process: Building the MAC Table}
 
-Cisco switches build and maintain the MAC address table through a dynamic learning process. This method is crucial to ensuring frames are directed to the correct destinations within the network. Here’s how this process works:
+Cisco switches build and maintain the MAC address table through a dynamic learning process. This method is crucial to ensuring frames are directed to the correct destinations within the network. Here’s how this process works~\cite{Learning-Process}:
 
 \begin{enumerate}
     
@@ -147,28 +151,28 @@ Cisco switches build and maintain the MAC address table through a dynamic learni
 
     \item \textbf{Updating the Table:} Next, the switch checks its MAC address table to see if this source MAC address is already linked to any port. If it isn’t in the table, the switch adds a new entry. This entry connects that MAC address to the port it was received on. This mapping enables the switch to forward future frames intended for that MAC address to the correct port.
 
-    \item \textbf{Continuous Learning:} As more frames are received, the switch continuously updates its MAC address table, adding new entries or modifying existing ones if devices move to different ports. This ongoing learning process keeps the table accurate and reflective of the current network topology.\footnote{\href{https://learningnetwork.cisco.com/s/article/mac-address-learing-pdf}{\textit{Cisco Systems: MAC Address Learning Process}}}
+    \item \textbf{Continuous Learning:} As more frames are received, the switch continuously updates its MAC address table, adding new entries or modifying existing ones if devices move to different ports. This ongoing learning process keeps the table accurate and reflective of the current network topology.
 
 \end{enumerate}
 
 
 \subsection*{Forwarding and Filtering Decisions}
 
-Once the table is populated, Cisco switches utilize this table to make forwarding and filtering choices, quite crucial for managing network traffic well.
+Once the table is populated, Cisco switches utilize this table to make forwarding and filtering choices, quite crucial for managing network traffic well~\cite{Forwarding-and-Filtering}.
 \begin{enumerate}
     
     \item \textbf{Forwarding Frames:} When they receive a frame, switches check its destination MAC address in their table. If there's a match, they forward it only to the port with that MAC address. This direct forwarding cuts down unnecessary network traffic and enhances efficiency.
 
     \item \textbf{Filtering Frames:} If the destination MAC address is not found in the table, the switch must decide how to handle the frame. Typically, the switch floods the frame to all ports except the one it was received on, ensuring it reaches its destination. Additionally, Cisco switches can be configured with specific rules to drop frames based on their MAC addresses, thereby enhancing both security and performance.
 
-    \item \textbf{Handling Broadcast and Multicast Traffic:} For broadcast and multicast traffic—meant for several devices—there's a different approach. Cisco switches automatically send broadcast frames to all ports. Meanwhile, multicast frames are sent based on how their group is set up and what’s in the MAC address table.\footnote{\href{https://www.cisco.com/c/en/us/support/docs/routers/12000-series-routers/47321-ciscoef.html}{\textit{Forwarding and Filtering Decisions}}}
+    \item \textbf{Handling Broadcast and Multicast Traffic:} For broadcast and multicast traffic—meant for several devices—there's a different approach. Cisco switches automatically send broadcast frames to all ports. Meanwhile, multicast frames are sent based on how their group is set up and what’s in the MAC address table.
 
 \end{enumerate}
 
 
 \subsection*{Aging Process of MAC Addresses}
 
-To maintain the MAC address table from being too big or old-fashioned, Cisco switches use an aging method for these entries.
+To maintain the MAC address table from being too big or old-fashioned, Cisco switches use an aging method for these entries~\cite{Aging-Process}.
 
 \begin{enumerate}
 
@@ -178,12 +182,12 @@ To maintain the MAC address table from being too big or old-fashioned, Cisco swi
 
 \item \textbf{Impact of Aging:} The aging process helps maintain optimal switch performance by controlling the size of the MAC address table. It ensures that the table accurately reflects current network conditions, allowing the switch to respond appropriately when devices move or are removed.
 
-\item \textbf{Configuring Aging Time:} Network administrators can adjust the aging time based on specific network requirements. Shorter aging times may be more appropriate for dynamic environments, while longer times might be better suited for more stable networks. Proper configuration of the aging timer is crucial for maintaining an efficient and responsive network.\footnote{\href{https://community.cisco.com/t5/networking-knowledge-base/network-switching-operation/ta-p/4193160}{\textit{MAC Address Table Aging Process}}}
+\item \textbf{Configuring Aging Time:} Network administrators can adjust the aging time based on specific network requirements. Shorter aging times may be more appropriate for dynamic environments, while longer times might be better suited for more stable networks. Proper configuration of the aging timer is crucial for maintaining an efficient and responsive network.
 \end{enumerate}
 
 \section*{Configuring MAC Addresses on Cisco Switches}
 
-Cisco switches allow administrators to manage MAC addresses efficiently. They can configure both and dynamic entries based on the needs of the network. In this section, we will explore the difference between static and dynamic MAC address entries, provide a guide for setting up static MAC addresses, and detail how to confirm these settings.
+Cisco switches allow administrators to manage MAC addresses efficiently. They can configure both and dynamic entries based on the needs of the network. In this section, we will explore the difference between static and dynamic MAC address entries, provide a guide for setting up static MAC addresses, and detail how to confirm these settings~\cite{Static-vs-Dynamic-MAC}.
 
 
 \subsection*{Static vs. Dynamic MAC Address Entries}
@@ -191,7 +195,7 @@ Cisco switches allow administrators to manage MAC addresses efficiently. They ca
 \textbf{Dynamic MAC Address Entries:} These entries are learned automatically by the switch as devices communicate. When a frame arrives, the switch stores the source MAC address along with the port it was received on. This creates a dynamic entry in the MAC address table. However, these entries are temporary and can be removed after a certain period of inactivity. Dynamic entries are ideal for environments where devices frequently connect and disconnect.
 \newline
 \newline
-\textbf{Static MAC Address Entries:} Unlike dynamic entries, these are manually configured by the network administrator. They are stored permanently in the MAC address table. Static entries do not age out; they remain until they are deleted or if the switch is restarted. Static entries are typically used for devices that require a stable connection, such as servers or printers. This ensures that the switch consistently knows which port these critical devices are connected to, reducing the likelihood of disruptions.\footnote{\href{https://learnduty.com/network-techs/dynamic-vs-static-mac-address-explained-configuration/}{\textit{Dynamic and Static MAC Address}}}
+\textbf{Static MAC Address Entries:} Unlike dynamic entries, these are manually configured by the network administrator. They are stored permanently in the MAC address table. Static entries do not age out; they remain until they are deleted or if the switch is restarted. Static entries are typically used for devices that require a stable connection, such as servers or printers. This ensures that the switch consistently knows which port these critical devices are connected to, reducing the likelihood of disruptions.
 
 
 \subsection*{Configuring Static MAC Addresses: Step-by-Step Guide}
@@ -291,7 +295,7 @@ Troubleshooting issues with MAC addresses is crucial for keeping a network stabl
 
     \item \textbf{Broadcast Storms:}
         \begin{itemize}
-            \item A broadcast storm may occur if a switch continuously sends broadcast frames because it cannot find the correct destination MAC address. This situation floods the network and causes significant performance problems.\footnote{\href{https://netseccloud.com/troubleshooting-common-issues-with-cisco-mac-address-tables}{\textit{Troubleshooting MAC Address Issues}}}
+            \item A broadcast storm may occur if a switch continuously sends broadcast frames because it cannot find the correct destination MAC address. This situation floods the network and causes significant performance problems.
         \end{itemize}
 
 \end{enumerate}
@@ -315,7 +319,7 @@ Troubleshooting issues with MAC addresses is crucial for keeping a network stabl
 
     \item \textbf{Reviewing Log Files:}
         \begin{itemize}
-            \item Log files are useful for obtaining information on MAC address errors. The \lstinline{show logging} command allows you to review recent log entries for any indications of MAC address issues.\footnote{\href{https://netseccloud.com/how-to-manage-and-troubleshoot-the-cisco-mac-address-table}{\textit{Debugging Techniques for MAC Addresses}}}
+            \item Log files are useful for obtaining information on MAC address errors. The \lstinline{show logging} command allows you to review recent log entries for any indications of MAC address issues.
         \end{itemize}
 
 \end{enumerate}
@@ -353,8 +357,7 @@ As networks become more complex, effective address management is vital for both 
 
 \subsection*{MAC Address Security: Port Security and MAC Filtering}
 \subsubsection*{Port Security:}
-In Cisco switches, port security allows network managers to limit the number of MAC addresses that can connect through a specific port. By configuring port security, managers can control which devices are allowed to access the network, thereby preventing unauthorized devices from connecting.
-
+In Cisco switches, port security allows network managers to limit the number of MAC addresses that can connect through a specific port. By configuring port security, managers can control which devices are allowed to access the network, thereby preventing unauthorized devices from connecting~\cite{Port-Security}.
 \begin{enumerate}
     \item \textbf{Static MAC Address Binding:} Administrators have the option to manually bind specific MAC addresses to a port. This ensures that only approved devices can connect. If an unapproved device attempts to use that port, it results in a violation. Such violations can trigger actions like shutting down the port or sending out an alert.
     \item \textbf{Limiting MAC Address Learning:} With port security, you can set a maximum number of MAC addresses for a given port. If this limit is exceeded, the switch has several options: it can drop new traffic, disable the port, or place it in a restricted state.
@@ -369,17 +372,16 @@ In Cisco switches, port security allows network managers to limit the number of 
 
 
 
-\subsubsection*{MAC Filtering:} MAC filtering provides an additional layer of security. This allows network managers to create lists of allowed or denied MAC addresses. It is particularly useful in environments where certain devices should not have access or should only be allowed access to specific network segments.
+\subsubsection*{MAC Filtering:} MAC filtering provides an additional layer of security. This allows network managers to create lists of allowed or denied MAC addresses. It is particularly useful in environments where certain devices should not have access or should only be allowed access to specific network segments~\cite{MAC-Filtering}.
     \begin{itemize}
         \item \textbf{Allow Lists:} Only devices on this list can connect through designated ports.
         \item \textbf{Deny Lists:} Any device on this list is blocked from accessing the network through the configured ports.
     \end{itemize}
 
-Both port security and MAC filtering are crucial for ensuring network security and maintaining integrity by preventing unauthorized access and allowing only trusted devices to communicate.\footnote{\href{https://ccna-classes.com/ccna-study-resources/port-security-vs-mac-address-filtering/}{\textit{Network Security Basics}}}
-
+Both port security and MAC filtering are crucial for ensuring network security and maintaining integrity by preventing unauthorized access and allowing only trusted devices to communicate.
 
 \subsection*{Managing MAC Address Flooding Attacks}
-MAC address flooding attacks are serious threats to network safety. In these attacks, an attacker overwhelms the switch with fake MAC addresses, causing its address table to overflow. When this table reaches capacity, the switch ultimately floods all frames to every port, leading to network congestion and increasing the risk of data breaches.
+MAC address flooding attacks are serious threats to network safety. In these attacks, an attacker overwhelms the switch with fake MAC addresses, causing its address table to overflow. When this table reaches capacity, the switch ultimately floods all frames to every port, leading to network congestion and increasing the risk of data breaches~\cite{MAC-Flooding}.
 
 \subsubsection*{Preventive Measures:}
     \begin{enumerate}
@@ -396,11 +398,11 @@ MAC address flooding attacks are serious threats to network safety. In these att
         \item \textbf{Rate Limiting:} Implement rate limiting on incoming traffic to mitigate the impact of flooding attacks.
     \end{itemize}
     
-    Managing MAC address flooding attacks requires a combination of proactive and reactive strategies to maintain network security and efficiency.\footnote{\href{https://www.interserver.net/tips/kb/mac-flooding-prevent/}{\textit{MAC Address Flooding Attacks}}}
+    Managing MAC address flooding attacks requires a combination of proactive and reactive strategies to maintain network security and efficiency.
     
 
     \subsubsection*{Enhancing Network Performance Through Efficient MAC Address Management}
-    Efficient MAC address management is essential for optimizing network performance, particularly in large and dynamic environments. Effective management reduces congestion and latency while improving overall efficiency.
+    Efficient MAC address management is essential for optimizing network performance, particularly in large and dynamic environments. Effective management reduces congestion and latency while improving overall efficiency~\cite{Network-Efficiency}.
     
     \begin{enumerate}
         \item \textbf{Regular Maintenance of the MAC Address Table:}
@@ -426,7 +428,7 @@ MAC address flooding attacks are serious threats to network safety. In these att
     \end{enumerate}
 
 
-    By adopting these practices, administrators can enhance the performance of their Cisco switches, ensuring network responsiveness even under heavy traffic loads.\footnote{\href{https://netseccloud.com/optimizing-network-efficiency-with-cisco-mac-address-table-settings}{\textit{Optimizing Network Efficiency}}}
+    By adopting these practices, administrators can enhance the performance of their Cisco switches, ensuring network responsiveness even under heavy traffic loads.
 
 
 
@@ -451,7 +453,7 @@ The IT team implemented several strategies to ensure the network could support t
 
 
 \subsubsection*{Result:}
-These strategies resulted in a more reliable and efficient network, capable of supporting the company’s growth seamlessly. By maintaining the MAC address table size and ensuring critical devices remained accessible, the IT team preserved excellent network performance and reliability, even as more devices connected.\footnote{\href{https://orhanergun.net/case-studies-network-management-insights}{\textit{Managing Network Growth with MAC Address Control}}}
+These strategies resulted in a more reliable and efficient network, capable of supporting the company’s growth seamlessly. By maintaining the MAC address table size and ensuring critical devices remained accessible, the IT team preserved excellent network performance and reliability, even as more devices connected.
 
 \subsection*{Example 2: Preventing MAC Spoofing Attacks in Corporate Networks}
 
@@ -470,11 +472,11 @@ To combat these spoofing attacks, the IT department took several actions:
 
 
 \subsubsection*{Result:}
-These measures effectively stopped the MAC spoofing attacks and restored the integrity and service availability of the network for legitimate users. The corporation strengthened its overall security posture, making it more resilient against insider threats while securing sensitive areas.\footnote{\href{https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/4561-docs-security/6636/1/Mac_spoofing_case_study_v2.pdf}{\textit{Preventing MAC Spoofing Attacks}}}
+These measures effectively stopped the MAC spoofing attacks and restored the integrity and service availability of the network for legitimate users. The corporation strengthened its overall security posture, making it more resilient against insider threats while securing sensitive areas.\footnote
 
 \section*{Conclusion: Best Practices for MAC Address Management in Cisco Environments}
 
-Effective MAC address management is essential for maintaining secure and smoothly running networks. When network engineers understand the role of MAC addresses and adhere to best management practices, they enable networks to operate efficiently with reduced risk.
+Effective MAC address management is essential for maintaining secure and smoothly running networks. When network engineers understand the role of MAC addresses and adhere to best management practices, they enable networks to operate efficiently with reduced risk~\cite{Conclusion}.
 
 \subsection*{Recap of Key Points}
     \begin{itemize}
@@ -494,10 +496,15 @@ Effective MAC address management is essential for maintaining secure and smoothl
         \item \textbf{Strengthen Network Security:} Use advanced features such as Dynamic ARP Inspection and MAC filtering to defend against attacks like MAC spoofing and flooding, thereby boosting overall network security.
     \end{enumerate}
 
-By following these best practices, network engineers can effectively manage MAC addresses in Cisco environments, leading to robust network performance and enhanced security.\footnote{\href{https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/best/practices/recommendations.html}{\textit{Preventing MAC Spoofing Attacks}}}
+By following these best practices, network engineers can effectively manage MAC addresses in Cisco environments, leading to robust network performance and enhanced security.
 
+\newpage
 
-\bibliographystyle{plain}
+\begin{multicols}{2}
+\small
+\bibliographystyle{unsrt}
 \bibliography{references}
+\end{multicols}
+
 
 \end{document}

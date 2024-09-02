@@ -1,9 +1,84 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{IEEE-Registration-Authority}
+Ieee registration authority: Mac address table.
+\newblock \href{https://standards.ieee.org/products-programs/regauth}{IEEE
+  Registration Authority}.
+\newblock Accessed: 2024-07-02.
+
+\bibitem{IEEE-Standards-Association}
+Ieee standards association: Mac address structure.
+\newblock
+  \href{https://standards.ieee.org/products-programs/regauth/mac.html}{IEEE
+  Standards Association: MAC Address Structure}.
+\newblock Accessed: 2024-07-03.
+
+\bibitem{Learning-Process}
+Dynamic learning in cisco mac address tables.
+\newblock
+  \href{https://netseccloud.com/dynamic-learning-in-cisco-mac-address-tables-a-deep-dive}{Dynamic
+  Learning in Cisco MAC Address Tables}.
+\newblock Accessed: 2024-07-02.
+
+\bibitem{Forwarding-and-Filtering}
+Forward and filter decision switching.
+\newblock
+  \href{https://www.vskills.in/certification/tutorial/forward-and-filter-decision-switching/}{Forward
+  and Filter Decision Switching}.
+\newblock Accessed: 2024-07-03.
+
+\bibitem{Aging-Process}
+Mac learning and aging.
+\newblock \href{https://www.geeksforgeeks.org/mac-learning-and-aging/}{MAC
+  Learning and Aging}.
+\newblock Accessed: 2024-07-05.
+
+\bibitem{Static-vs-Dynamic-MAC}
+Types of mac address entries.
+\newblock
+  \href{https://support.hpe.com/techhub/eginfolib/networking/docs/switches/5940/5200-1018b_l2-lan_cg/content/491966096.htm}{Types
+  of MAC address entries}.
+\newblock Accessed: 2024-07-05.
 
 \bibitem{Troubleshooting-Mac-Address-Table}
 Troubleshooting mac address table manager.
 \newblock
-  \url{https://www.cisco.com/c/fr_ca/support/docs/switches/catalyst-9300-series-switches/222060-troubleshoot-mac-address-table-manager-o.html?dtid=osscdc000283}.
+  \href{https://www.cisco.com/c/fr_ca/support/docs/switches/catalyst-9300-series-switches/222060-troubleshoot-mac-address-table-manager-o.html?dtid=osscdc000283}{Troubleshooting
+  Mac Address Table Manager}.
 \newblock Accessed: 2024-07-02.
+
+\bibitem{Port-Security}
+Information about port security.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-3/configuration_guide/sec/b_173_sec_9300_cg/port_security.html}{Information
+  About Port Security}.
+\newblock Accessed: 2024-07-05.
+
+\bibitem{MAC-Filtering}
+Mac filtering in computer network.
+\newblock
+  \href{https://www.geeksforgeeks.org/mac-filtering-in-computer-network/}{MAC
+  Filtering in Computer Network}.
+\newblock Accessed: 2024-07-06.
+
+\bibitem{MAC-Flooding}
+What is mac flooding? how to prevent it?
+\newblock \href{https://www.interserver.net/tips/kb/mac-flooding-prevent/}{What
+  is MAC Flooding? How to prevent it?}
+\newblock Accessed: 2024-07-08.
+
+\bibitem{Network-Efficiency}
+Optimizing network efficiency with cisco mac address table settings.
+\newblock
+  \href{https://netseccloud.com/optimizing-network-efficiency-with-cisco-mac-address-table-settings}{Optimizing
+  Network Efficiency with Cisco MAC Address Table Settings}.
+\newblock Accessed: 2024-07-08.
+
+\bibitem{Conclusion}
+Best practice recommendations.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SX/best/practices/recommendations.html}{Best
+  Practice Recommendations}.
+\newblock Accessed: 2024-07-08.
 
 \end{thebibliography}
