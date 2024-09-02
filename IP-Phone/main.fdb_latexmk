@@ -1,6 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1725229163.1107 "c:/Users/Lord/Desktop/Git/Article/IP-Phone/main.tex" "main.pdf" "main" 1725229163.6141 0
-  "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725142087 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["bibtex main"] 1725317038.66669 "main.aux" "main.bbl" "main" 1725317072.96797 0
+  "./references.bib" 1725317038 1912 ca80f6ffd83e8e36d6428b560658c3bb ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
+  "main.aux" 1725317072 570 2601bf2fd7025881a5eeeb369f6f87b5 "pdflatex"
+  (generated)
+  "main.bbl"
+  "main.blg"
+  (rewritten before read)
+["pdflatex"] 1725317071.95721 "c:/Users/Lord/Desktop/Git/Article/IP-Phone/main.tex" "main.pdf" "main" 1725317072.96829 0
+  "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725264747 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lord/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725139274 24224574 dc7f1ddfa7aa0d1a39bc372d14d1d367 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc" 1256929440 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
@@ -106,12 +114,14 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Lord/Desktop/Git/Article/IP-Phone/main.tex" 1725229162 29260 8702a82a4e5d171509770a355454e14f ""
-  "main.aux" 1725229163 223 c6c5b7be98368afc46d94e8d7cde22a6 "pdflatex"
-  "main.out" 1725229163 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1725229162 29260 8702a82a4e5d171509770a355454e14f ""
+  "c:/Users/Lord/Desktop/Git/Article/IP-Phone/main.tex" 1725317071 28206 1f0106e64d8a42ed5b0f38ab939a9835 ""
+  "main.aux" 1725317072 570 2601bf2fd7025881a5eeeb369f6f87b5 "pdflatex"
+  "main.bbl" 1725317038 1583 347ecd9ace11eab665780dc8b1be3e54 "bibtex main"
+  "main.out" 1725317072 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1725317071 28206 1f0106e64d8a42ed5b0f38ab939a9835 ""
   (generated)
   "main.aux"
   "main.log"

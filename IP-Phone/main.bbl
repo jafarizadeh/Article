@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{8800-series}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/products/collaboration-endpoints/unified-ip-phone-8800-series/index.html}{\newline
+  cisco ip phone 8800 series}.
+
+\bibitem{Security-Features}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/dam/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/white-paper-c11-739097.pdf}{\newline
+  security features of cisco ip phones}.
+
+\bibitem{7800-series}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/products/collaboration-endpoints/unified-ip-phone-7800-series/index.html}{\newline
+  cisco ip phone 7800 series}.
+
+\bibitem{Business-Phone-Systems}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/solutions/small-business/collaboration/phone-systems.html}{\newline
+  business phone systems}.
+
+\bibitem{CRM}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/cucallconnectors/UCC_for_MS_CRM/Rel_30/marketing_source/30mkting.pdf}{\newline
+  crm integration with cisco ip phones}.
+
+\bibitem{Cloud}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/products/unified-communications/webex-calling/index.html}{\newline
+  cloud connectivity with cisco ip phones}.
+
+\bibitem{Mobile-Device}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-8800-series/smb5670-configure-a-mobile-device-with-cisco-ip-phone-8800-series-mu.pdf}{\newline
+  mobile device integration with cisco ip phones}.
+
+\end{thebibliography}

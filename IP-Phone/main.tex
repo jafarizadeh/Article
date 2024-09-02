@@ -2,21 +2,23 @@
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage{amsmath, amssymb} % For math symbols
-\usepackage{lmodern} % Font
-\usepackage{hyperref} % Allows for hyperlinks
+\usepackage{amsmath, amssymb}
+\usepackage{lmodern} 
+\usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{multicol} 
+\usepackage{etoolbox} 
 
 \lstset{
-  backgroundcolor=\color{gray!30},  % Light gray background
-  basicstyle=\small\ttfamily\color{black},  % Smaller font size
-  keywordstyle=\bfseries\color{cyan},  % Cyan keywords
-  commentstyle=\itshape\color{green},  % Green comments
-  stringstyle=\color{orange},  % Orange strings
-  showstringspaces=false,  % No space marks
-  frame=single,  % Single frame around code
-  breaklines=true  % Automatic line breaking
+  backgroundcolor=\color{gray!30}, 
+  basicstyle=\small\ttfamily\color{black}, 
+  keywordstyle=\bfseries\color{cyan},  
+  commentstyle=\itshape\color{green},
+  stringstyle=\color{orange}, 
+  showstringspaces=false, 
+  frame=single,  
+  breaklines=true 
 }
 
 
@@ -39,8 +41,12 @@
 
 Overall, this detailed overview underscores the significance of Cisco IP Phones in achieving high-quality communication, robust security, and operational efficiency in a rapidly changing technological landscape.
 \end{abstract}
+
+\newpage
+
 \section*{Introduction to Cisco IP Phones}
-Cisco IP phones are versatile, dependable solutions made for today’s business communication needs. These devices effortlessly integrate into a company’s network setup, using Internet Protocol (IP) to send voice and multimedia chats over a data network. They are different from traditional analog phones. Cisco IP phones bring superior features like clear voice quality, safe communications, and the capability to integrate with other business tools and apps. This makes them essential in modern work environments.\footnote{\label{foot:Cisco IP Phone 8800}\href{https://www.cisco.com/c/en/us/products/collaboration-endpoints/unified-ip-phone-8800-series/index.html}{\textit{Cisco IP Phone 8800 Series}}}
+
+Cisco IP phones are versatile, dependable solutions made for today’s business communication needs. These devices effortlessly integrate into a company’s network setup, using Internet Protocol (IP) to send voice and multimedia chats over a data network. They are different from traditional analog phones. Cisco IP phones bring superior features like clear voice quality, safe communications, and the capability to integrate with other business tools and apps. This makes them essential in modern work environments~\cite{8800-series}.
 
 In this age of modern business, using IP telephony is not just a choice; it is essential. As businesses work globally more than ever, they require communication solutions that are reliable, can grow with them, and are cost-effective. Cisco IP phones answer this call with exceptional voice quality and many features that facilitate collaboration, enhance mobility, and stay productive. They enable seamless communication with clients, partners, and employees around the world. This boosts their overall efficiency and fosters business success.
 
@@ -52,14 +58,14 @@ Cisco IP phones are well-known for advanced features that make a top choice for.
 
 A key highlight of Cisco IP phones is their excellent voice quality. Thanks to Cisco's high-definition (HD) voice technology, users experience high-fidelity audio. This reduces misunderstandings and enhances communication. Additionally, these phones support wideband audio, which improves clarity in challenging acoustic environments.
 
-Security aspects stand out as another area where Cisco IP phones excel. They come with strong security measures like Transport Layer Security (TLS) and Secure Real-time Transport Protocol (SRTP). These protocols encrypt calls and protect them from potential threats. This makes them ideal for industries where keeping data safe is critical, such as in healthcare and finance.\footnote{\href{https://www.cisco.com/c/dam/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/white-paper-c11-739097.pdf}{\textit{Security Features of Cisco IP Phones.}}}
+Security aspects stand out as another area where Cisco IP phones excel. They come with strong security measures like Transport Layer Security (TLS) and Secure Real-time Transport Protocol (SRTP). These protocols encrypt calls and protect them from potential threats. This makes them ideal for industries where keeping data safe is critical, such as in healthcare and finance~\cite{Security-Features}.
 
 
 \subsection*{Variety of Models and Use Cases}
 
-Cisco provides a range of IP phone models to meet various business needs. For example, the Cisco IP Phone 8800 Series is ideal for executives who need features like Bluetooth connectivity and smartphone integration. Alternatively, the Cisco IP Phone 7800 Series suits businesses looking for cost-effective solutions while still needing quality communication.\footref{foot:Cisco IP Phone 8800}
+Cisco provides a range of IP phone models to meet various business needs. For example, the Cisco IP Phone 8800 Series is ideal for executives who need features like Bluetooth connectivity and smartphone integration. Alternatively, the Cisco IP Phone 7900 Series suits businesses looking for cost-effective solutions while still needing quality communication~\cite{8800-series}.
 
-For certain requirements, like in call centers, Cisco has models such as the Cisco IP Phone 7900 Series. These phones manage high call volumes effectively, offering features like customizable line keys and headset support. This variety ensures that there’s a Cisco IP phone suitable for every business, whether a small startup or a large enterprise.\footnote{\href{https://www.cisco.com/c/en/us/products/collaboration-endpoints/unified-ip-phone-7800-series/index.html}{\textit{Cisco IP Phone 7800 Series}}}
+For certain requirements, like in call centers, Cisco has models such as the Cisco IP Phone 7800 Series. These phones manage high call volumes effectively, offering features like customizable line keys and headset support. This variety ensures that there’s a Cisco IP phone suitable for every business, whether a small startup or a large enterprise~\cite{7800-series}.
 
 
 \subsection*{Advanced Functionalities}
@@ -71,7 +77,7 @@ Additionally, these phones integrate seamlessly with other business tools and pl
 
 \section*{Benefits of Using Cisco IP Phones in Business}
 
-Cisco IP phones bring many benefits that make them a smart choice for businesses aiming to improve their communication setup. These advantages include better communication quality, reliability, cost savings, scalability, and strong security features.\footnote{\href{https://www.cisco.com/c/en/us/solutions/small-business/collaboration/phone-systems.html}{\textit{Business Phone Systems}}}
+Cisco IP phones bring many benefits that make them a smart choice for businesses aiming to improve their communication setup. These advantages include better communication quality, reliability, cost savings, scalability, and strong security features~\cite{Business-Phone-Systems}.
 
 \subsection*{Better Communication Quality and Reliability}
 
@@ -98,13 +104,13 @@ Cisco IP phones are made to work well with current IT setups. They improve busin
 
 Cisco IP phones integrate smoothly into an organization’s existing UC infrastructure. Businesses can combine voice, video, messaging, and conferencing services on one platform. For instance, Cisco IP phones seamlessly integrate with Cisco Unified Communications Manager (CUCM). This allows functions like call routing, voicemail, and presence information throughout the organization. Such integration makes managing communication easier and improves how users interact by offering a clear and consistent interface across different devices and channels.
 
-Additionally, these phones can link with CRM systems like Salesforce. Users can see customer details and interaction history right on their phones. This helps different businesses to enhance customer service. It reduces wait times and boosts satisfaction by giving quick access to useful information during calls.\footnote{\href{https://www.cisco.com/c/dam/en/us/td/docs/voice_ip_comm/cucallconnectors/UCC_for_MS_CRM/Rel_30/marketing_source/30mkting.pdf}{\textit{CRM Integration with Cisco IP Phones}}}
+Additionally, these phones can link with CRM systems like Salesforce. Users can see customer details and interaction history right on their phones. This helps different businesses to enhance customer service. It reduces wait times and boosts satisfaction by giving quick access to useful information during calls~\cite{CRM}.
 
 \subsection*{Seamless Connectivity with Cloud Services and Mobile Devices}
 
-In today’s world where cloud solutions are increasingly important, Cisco IP phones offer seamless connections to various cloud services. These devices integrate effectively to cloud-based UC platforms like Cisco Webex. Users can access their communication tools from anywhere through this integration. Such cloud integration enables real-time collaboration and file sharing, while scheduling meetings directly from the IP phone, boosting productivity and enhancing team collaboration regardless of location.\footnote{\href{https://www.cisco.com/c/en/us/products/unified-communications/webex-calling/index.html}{\textit{Cloud Connectivity with Cisco IP Phones}}}
+In today’s world where cloud solutions are increasingly important, Cisco IP phones offer seamless connections to various cloud services. These devices integrate effectively to cloud-based UC platforms like Cisco Webex. Users can access their communication tools from anywhere through this integration. Such cloud integration enables real-time collaboration and file sharing, while scheduling meetings directly from the IP phone, boosting productivity and enhancing team collaboration regardless of location~\cite{Cloud}.
 
-Also, Cisco IP phones offer advanced mobile features. Many models support Bluetooth pairing with devices like cell phones. This enables users answer calls on either their desk phone or mobile device without issues. This is especially helpful for those who always move around since it keeps them connected to work communications consistently.\footnote{\href{https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-8800-series/smb5670-configure-a-mobile-device-with-cisco-ip-phone-8800-series-mu.pdf}{\textit{Mobile Device Integration with Cisco IP Phones}}}
+Also, Cisco IP phones offer advanced mobile features. Many models support Bluetooth pairing with devices like cell phones. This enables users answer calls on either their desk phone or mobile device without issues. This is especially helpful for those who always move around since it keeps them connected to work communications consistently~\cite{Mobile-Device}.
 
 
 \subsection*{Supporting Remote and Hybrid Work Environments}
@@ -247,5 +253,18 @@ Here are some key points:
 \end{itemize}
 
 In summary, investing in Cisco IP phones goes beyond just getting new communication tools; it’s about setting up your business for success down the road. As business communication keeps changing, having a dependable, scalable, and secure platform will be crucial. Cisco's focus on innovation and using the latest technologies makes their IP phones an essential asset for any organization wanting to succeed in a fast-moving world. By choosing Cisco, you are making a smart decision to boost your company’s communication strengths and improve efficiency while preparing for future challenges.
+
+
+\newpage
+
+\begin{multicols}{2}
+  \small
+  \bibliographystyle{unsrt}
+  \makeatletter
+\renewcommand\@biblabel[1]{#1.} % تغییر قالب شماره به صورت n.
+\makeatother
+  \bibliography{references}
+ 
+  \end{multicols}
 
 \end{document}
