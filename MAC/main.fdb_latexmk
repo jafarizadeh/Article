@@ -1,6 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1725228071.76117 "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" "main.pdf" "main" 1725228072.32759 0
-  "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725142087 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["bibtex main"] 1725264067.13405 "main.aux" "main.bbl" "main" 1725264068.25222 0
+  "./references.bib" 1725264066 331 10a82286df5fba5948506808ce707f1c ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "main.aux" 1725264067 293 10de87e27d99a488ac85c484b02af407 "pdflatex"
+  (generated)
+  "main.bbl"
+  "main.blg"
+  (rewritten before read)
+["pdflatex"] 1725264067.39718 "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" "main.pdf" "main" 1725264068.25279 0
+  "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725263425 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lord/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725139274 24224574 dc7f1ddfa7aa0d1a39bc372d14d1d367 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc" 1256929440 2359 de53213020575850c8f8debc35095765 ""
@@ -114,10 +122,11 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" 1725228071 40443 a17dc3ba59ab12ec3f939f680c76ec56 ""
-  "main.aux" 1725228072 163 1597a99f0f32d26a2360138cbcf204c3 "pdflatex"
-  "main.out" 1725228072 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1725228071 40443 a17dc3ba59ab12ec3f939f680c76ec56 ""
+  "c:/Users/Lord/Desktop/Git/Article/MAC/main.tex" 1725263997 40326 7f192547053fe0d93b596a8b6a6266e8 ""
+  "main.aux" 1725264067 293 10de87e27d99a488ac85c484b02af407 "pdflatex"
+  "main.bbl" 1725264067 351 7df500edf8d6ebcbbac82a0c7ac1d8c1 "bibtex main"
+  "main.out" 1725264067 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1725263997 40326 7f192547053fe0d93b596a8b6a6266e8 ""
   (generated)
   "main.aux"
   "main.log"
