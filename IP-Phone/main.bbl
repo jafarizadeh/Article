@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{8800-series}
 Cisco.
@@ -53,5 +53,11 @@ cisco.
 \newblock
   \href{https://www.cisco.com/c/en/us/products/collaboration-endpoints/ip-phones/index.html}{\newline
   artificial intelligence in cisco ip phones}.
+
+\bibitem{Design}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/TrustSec_1-99/IP_Tele/IP_Telephony_DIG.html}
+  {\newline ip telephony for 802.1x design guide}.
 
 \end{thebibliography}
