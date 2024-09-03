@@ -42,4 +42,16 @@ Cisco.
   \href{https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-8800-series/smb5670-configure-a-mobile-device-with-cisco-ip-phone-8800-series-mu.pdf}{\newline
   mobile device integration with cisco ip phones}.
 
+\bibitem{IP-Telephony}
+Cisco.
+\newblock
+  \href{https://www.cisco.com/c/dam/en_us/about/ciscoitatwork/downloads/ciscoitatwork/pdf/cisco_ip_telephony.pdf}{\newline
+  ip telephony deployment}.
+
+\bibitem{Artificial-Intelligence}
+cisco.
+\newblock
+  \href{https://www.cisco.com/c/en/us/products/collaboration-endpoints/ip-phones/index.html}{\newline
+  artificial intelligence in cisco ip phones}.
+
 \end{thebibliography}

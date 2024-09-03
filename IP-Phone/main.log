@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  3 SEP 2024 00:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  3 SEP 2024 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -579,17 +579,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Lord/
-AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [2] [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 120.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 120.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 120.
- [4]
+AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [2] [3] [4]
 [5] [6] [7]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-48.
+47.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [8{C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
@@ -602,24 +595,21 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12310 strings out of 474486
- 189099 string characters out of 5744227
- 1936542 words of memory out of 5000000
- 34351 multiletter control sequences out of 15000+600000
- 607876 words of font info for 77 fonts, out of 8000000 for 9000
+ 12283 strings out of 474486
+ 188840 string characters out of 5744227
+ 1935542 words of memory out of 5000000
+ 34335 multiletter control sequences out of 15000+600000
+ 594575 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,671b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,671b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb
 ><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb>
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C
 :/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
-Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Us
-ers/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users
-/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Lo
-rd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb>
-Output written on main.pdf (10 pages, 249726 bytes).
+Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
+Output written on main.pdf (10 pages, 189515 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
