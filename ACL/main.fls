@@ -186,11 +186,12 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.t
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
 INPUT C:\Users\Lord\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
-INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
-INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

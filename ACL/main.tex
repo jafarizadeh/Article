@@ -1,4 +1,3 @@
-
 \documentclass[11pt,a4paper]{article}
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage{graphicx}
@@ -36,16 +35,29 @@
 
 \newpage
 
+\section*{Introduction to ACLs on Cisco Devices}
+    \subsection*{What are Access Control Lists?}
+    Access Control Lists (ACLs) represent a vital component of network security and traffic management within Cisco devices. Essentially, an ACL consists of a series of rules that regulate the flow of network traffic. They determine whether specific packets should be allowed or denied according to various criteria. Such criteria may involve source and destination IP addresses, protocols, port numbers, and additional factors.
+
+    ACLs function like gatekeepers. They decide which types of network traffic are permitted to pass through interfaces found on routers, switches, and firewalls. Their role is critical in filtering both incoming and outgoing traffic. By protecting systems from unauthorized access or potential attacks, they assist network administrators in maintaining secure operations. Additionally, ACLs enhance network performance by effectively managing bandwidth and minimizing unnecessary traffic.
+
+    In summary, ACLs function as an effective method to control traffic flow while bolstering overall network security and efficiency~\cite{Introduction}.
+
+
+
+
 
 \newpage
 
+
 \begin{multicols}{2}
-  \small
-  \bibliographystyle{unsrt}
-  \makeatletter
-\renewcommand\@biblabel[1]{#1.} 
-  \bibliography{references}
- 
-  \end{multicols}
+    \small
+    \bibliographystyle{unsrt}
+    \makeatletter
+  \renewcommand\@biblabel[1]{#1.} 
+    \bibliography{references}
+   
+\end{multicols}
+  
 
 \end{document}
