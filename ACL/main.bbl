@@ -6,4 +6,40 @@
   \href{https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html}{\newline
   configure and filter ip access lists}.
 
+\bibitem{std-ext}
+\textbf{Cisco}.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html#GUID-65122EB8-E317-4172-8D2D-AC8DE3E0A2CF}{\newline
+  security configuration guide: access control lists, cisco ios release
+  15m\&t}.
+
+\bibitem{Implementing}
+\textbf{Cisco}.
+\newblock
+  \href{https://www.netacad.com/courses/security/implementing-access-control-lists}{\newline
+  implementing access control lists (acls).}
+
+\bibitem{Configuring-Standard-ACLs}
+\textbf{Cisco}.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/security/asa/asa92/configuration/general/asa-general-cli/acl-standard.pdf}{\newline
+  standard access control lists}.
+
+\bibitem{Configuring-Extended-ACLs}
+\textbf{Cisco}.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/security/asa/asa92/configuration/general/asa-general-cli/acl-extended.pdf}{\newline
+  extended access control lists}.
+
+\bibitem{Configuring-Named-ACLs}
+\textbf{Cisco}.
+\newblock
+  \href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-acl-named.pdf}{\newline
+  named access control lists}.
+
+\bibitem{How-Work}
+\textbf{twingate}.
+\newblock \href{https://www.twingate.com/blog/access-control-list}{\newline how
+  they work \& best practices}.
+
 \end{thebibliography}
