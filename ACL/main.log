@@ -589,8 +589,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12190 strings out of 474486
- 187161 string characters out of 5744227
+ 12189 strings out of 474486
+ 187155 string characters out of 5744227
  1935542 words of memory out of 5000000
  34295 multiletter control sequences out of 15000+600000
  594210 words of font info for 61 fonts, out of 8000000 for 9000
@@ -601,9 +601,9 @@ Here is how much of TeX's memory you used:
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C
 :/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
 Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-Output written on main.pdf (4 pages, 149131 bytes).
+Output written on main.pdf (4 pages, 148724 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
