@@ -43,10 +43,24 @@
 
     In summary, ACLs function as an effective method to control traffic flow while bolstering overall network security and efficiency~\cite{Introduction}.
 
+    
 
+    \subsection*{Types of ACLs: Standard ACLs vs. Extended ACLs}
+    ACLs are categorized into two major types: \textbf{Standard ACLs} and \textbf{Extended ACLs}.
 
+    \begin{enumerate}
+      \item \textbf{Standard ACLs} are the most fundamental form of these lists. They use numbers from 1 to 99 (plus extended ranges from 1300 to 1999). The primary function of Standard ACLs is to filter traffic based on the source IP address only. They disregard the destination IP address and omit consideration of the type of traffic (protocol or port). This makes them appropriate for less complex scenarios requiring basic control, such as allowing or blocking entire groups based on their source address.
+      
+      \textbf{Use case:} Consider a scenario where you intend to restrict traffic from a certain department within an organization. A standard ACL can serve this purpose effectively. For example, if you intend to block users from a designated subnet from accessing a specific part of your network, implementing a standard ACL would fulfill that purpose by preventing any traffic that originates from that particular subnet.
 
+      \item  \textbf{Extended ACLs:} These offer a more granular level of control over filtering traffic. Extended ACLs can filter data based on both the source and the destination IP addresses, as well as on protocols such as TCP, UDP, ICMP, and even particular port numbers. They are identified by numbers ranging from 100 to 199 (and extended ranges 2000 to 2699).
+    
+      \textbf{Use case:} If an administrator needs to block all HTTP traffic (port 80) coming from a specific source IP to a certain web server while allowing other kinds of traffic, an extended ACL would be appropriate. Extended ACLs are frequently used in situations that demand precise traffic control. This includes establishing security policies for various application types or services.
+      
+    \end{enumerate}
 
+    The versatility of extended ACLs makes them a powerful asset for network security. They are especially useful in complex environments where multiple protocols and services are operational.
+    
 \newpage
 
 
