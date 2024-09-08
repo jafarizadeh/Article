@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  8 SEP 2024 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  8 SEP 2024 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,7 +627,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
-[7] [8] [9] [10] [11] (main.bbl) [12] (main.aux)
+[7] [8] [9] [10]
+Overfull \hbox (9.16396pt too wide) in paragraph at lines 371--372
+\OT1/lmr/m/n/10.95 source IP [][][][][][], us-ing source port [][][][][][], and
+ di-rected at des-ti-na-tion IP [][]
+ []
+
+[11] [12] [13] (main.bbl) [14] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -636,8 +642,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12655 strings out of 474486
- 192437 string characters out of 5744227
+ 12675 strings out of 474486
+ 192635 string characters out of 5744227
  2043542 words of memory out of 5000000
  34636 multiletter control sequences out of 15000+600000
  594886 words of font info for 63 fonts, out of 8000000 for 9000
@@ -649,9 +655,9 @@ Here is how much of TeX's memory you used:
 :/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
 Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Us
 ers/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (12 pages, 235838 bytes).
+Output written on main.pdf (14 pages, 247195 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
