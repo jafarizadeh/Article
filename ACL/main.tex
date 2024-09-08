@@ -94,12 +94,12 @@
   Router# configure terminal
 \end{lstlisting}
 
-            \item \textbf{Create a Standard ACL:} To create a Standard ACL, execute the relevant command. In this example, traffic will be blocked from the IP address 192.168.1.10, while all other traffic is permitted. Standard ACLs use numbers ranging from 1 to 99.
+            \item \textbf{Create a Standard ACL:} To create a Standard ACL, execute the relevant command. In this example, traffic will be blocked from the IP address \lstinline{192.168.1.10}, while all other traffic is permitted. Standard ACLs use numbers ranging from 1 to 99.
 \begin{lstlisting}
   Router(config)# access-list 10 deny 192.168.1.10 0.0.0.0
   Router(config)# access-list 10 permit any
 \end{lstlisting}
-            The first command denies traffic from 192.168.1.10, while the second command permits all other traffic. The wildcard mask ensures the ACL applies only to the exact IP address specified.
+            The first command denies traffic from \lstinline{192.168.1.10}, while the second command permits all other traffic. The \lstinline{0.0.0.0} wildcard mask ensures the ACL applies only to the exact IP address specified.
 
             \item \textbf{Applying the ACL to an Interface:} Once the ACL is created, apply it to an interface to control the traffic passing through it. In this case, the ACL will be applied to inbound traffic on interface GigabitEthernet0/0.
 \begin{lstlisting}
@@ -123,14 +123,14 @@
   Router> enable
   Router# configure terminal    
 \end{lstlisting}
-            \item \textbf{Create an Extended ACL:} Extended ACLs use numbers from 100 to 199 or 2000 to 2699. The example below demonstrates how to block HTTP traffic (port 80) from the source IP 192.168.2.0/24 to the destination 10.1.1.0/24. All other traffic will be permitted.
+            \item \textbf{Create an Extended ACL:} Extended ACLs use numbers from 100 to 199 or 2000 to 2699. The example below demonstrates how to block HTTP traffic (port 80) from the source IP \lstinline{192.168.2.0/24} to the destination \lstinline{10.1.1.0/24}. All other traffic will be permitted.
 
 \begin{lstlisting}
   Router(config)# access-list 110 deny tcp 192.168.2.0 0.0.0.255 10.1.1.0 0.0.0.255 eq 80
   Router(config)# access-list 110 permit ip any any    
 \end{lstlisting}
 
-            The "deny tcp" command indicates that TCP traffic from 192.168.2.0 to 10.1.1.0 on port 80 (HTTP) will be denied. The "permit ip any any" rule permits all other traffic to pass through.
+            The \lstinline{"deny tcp"} command indicates that TCP traffic from \lstinline{192.168.2.0} to \lstinline{10.1.1.0} on port 80 (HTTP) will be denied. The \lstinline{"permit ip any any"} rule permits all other traffic to pass through.
 
             \item \textbf{Apply the Extended ACL to an Interface:} Similar to Standard ACLs, it is necessary to attach the Extended ACL to a specific interface to control the flow of traffic.
 \begin{lstlisting}
@@ -150,7 +150,7 @@
     \subsection*{Named ACLs}
     Named ACLs assist with easier management and scalability, especially in larger networks where access control needs can become complex. The primary difference between numbered ACLs and named ACLs is that named ACLs use descriptive names that describe their functions instead of just numbers, making them simpler to identify and update.
         \begin{enumerate}
-            \item \textbf{Create a Named ACL:} Rather than using a number, create your ACL with a name. For instance, create a named ACL called BLOCK\_HTTP that blocks HTTP traffic from 192.168.3.0/24 to 10.1.2.0/24.
+            \item \textbf{Create a Named ACL:} Rather than using a number, create your ACL with a name. For instance, create a named ACL called \lstinline{BLOCK_HTTP} that blocks HTTP traffic from \lstinline{192.168.3.0/24} to \lstinline{10.1.2.0/24}.
 \begin{lstlisting}
   Router(config)# ip access-list extended BLOCK_HTTP
   Router(config-ext-nacl)# deny tcp 192.168.3.0 0.0.0.255 10.1.2.0 0.0.0.255 eq 80
@@ -213,7 +213,7 @@
   access-list 100 deny tcp 192.168.1.0 0.0.0.255 any eq 80
   access-list 100 permit ip any any
 \end{lstlisting}
-            Initially, this ACL denies HTTP traffic from the 192.168.1.0 network while permitting all other traffic afterward. However, if you reverse the order of these entries, the "permit ip any any" rule would allow all traffic before the HTTP block is evaluated.
+            Initially, this ACL denies HTTP traffic from the \lstinline{192.168.1.0} network while permitting all other traffic afterward. However, if you reverse the order of these entries, the \lstinline{"permit ip any any"} rule would allow all traffic before the HTTP block is evaluated.
 
             \item \textbf{Why Ordering Matters:} 
                 \begin{itemize}
@@ -245,6 +245,91 @@
         \textbf{Best practice:} It is important to regularly review and optimize ACL configurations based on real-time performance monitoring data. This ensures they do not negatively impact network throughput~\cite{How-Work}.
 
 \section*{Advanced ACL Use Cases}
+    \subsection*{Traffic Filtering}
+        One of the most common uses for ACLs is traffic filtering. They can filter based on specific criteria such as IP addresses, protocols, or services. By controlling which traffic is allowed or blocked, network administrators can enhance security. They also optimize performance and enforce access policies~\cite{Traffic-Filtering}.
+            \begin{enumerate}
+                \item \textbf{Filtering Based on IP Addresses:} You can configure ACLs to allow or deny traffic from specific source or destination IP addresses. This is useful when limiting access to certain parts of the network. For example, you might require blocking external traffic from reaching sensitive internal resources or restricting access for particular departments or subnets within a company.
+                \\[1em]
+                \textbf{Use case:} Imagine you intend to block traffic from the IP range \lstinline{192.168.50.0/24} from entering the corporate data center (\lstinline{10.10.10.0/24}). You could configure an extended ACL as follows:
+\begin{lstlisting}
+  access-list 101 deny ip 192.168.50.0 0.0.0.255 10.10.10.0 0.0.0.255
+  access-list 101 permit ip any any
+\end{lstlisting}
+
+
+                \item \textbf{Filtering Traffic Using Protocols:} ACLs can filter traffic based on certain protocols, including TCP, UDP, ICMP, and others. For instance, you might wish to block all ICMP (ping) traffic from external networks. This helps mitigate denial-of-service attacks or reconnaissance attempts.
+                \\[1em]
+                \textbf{Use case:} To block ICMP traffic from an external network, such as \lstinline{203.0.113.0/24}, you could configure an ACL as follows:
+\begin{lstlisting}
+  access-list 102 deny icmp 203.0.113.0 0.0.0.255 any
+  access-list 102 permit ip any any
+\end{lstlisting}
+
+                \item \textbf{Filtering Traffic by Services (Ports):} Extended ACLs can also control traffic based on specific ports or services. For example, it is possible to block HTTP (port 80) or FTP (port 21) traffic. This enables detailed control over which services can be accessed on the network.
+                \\[1em]
+                \textbf{Use case:} If you intend to block all HTTP traffic from the IP range \lstinline{192.168.1.0/24} to the outside world while allowing other types of traffic, the configuration might appear as follows:
+\begin{lstlisting}
+  access-list 103 deny tcp 192.168.1.0 0.0.0.255 any eq 80
+  access-list 103 permit ip any any                    
+\end{lstlisting}
+                In this case, the ACL permits all other traffic but denies HTTP traffic.
+            \end{enumerate}
+
+    \subsection*{Security Access Management:}
+        ACLs are crucial in securing access to network devices such as routers and switches. This is especially important when using remote management protocols such as SSH or Telnet. By applying ACLs to management interfaces, administrators can limit who has access to the device. This reduces the attack surface and enhances security~\cite{Security-Management}.
+            \begin{enumerate}
+                \item \textbf{Limiting SSH Access:} SSH (Secure Shell) is commonly used for securely managing Cisco devices remotely. However, if SSH access is not properly controlled, it creates a security risk, particularly when connected to the internet. By using ACLs, administrators can restrict SSH access to only trusted IP addresses.
+                \\[1em]
+                \textbf{Use case:} If you intend to allow only a specific IP address (\lstinline{192.168.100.10}) to SSH into a router, you can configure an ACL as shown below:
+\begin{lstlisting}
+  access-list 104 permit tcp host 192.168.100.10 any eq 22
+  access-list 104 deny ip any any                  
+\end{lstlisting}
+                Next, apply the ACL to the VTY (virtual terminal) lines:
+
+                This setup ensures that only the designated IP address has access to the router using SSH, while access from all other sources will be denied.
+
+                \item \textbf{Restricting Telnet Access:} Similar to SSH, Telnet can also be restricted through ACLs. However, it is important to emphasize that Telnet is not recommended for secure access since it transmits data in plain text. If Telnet needs to be used internally, and you wish to restrict it to specific devices, an ACL can be applied in the same way as with SSH.
+                \\[1em]
+                \textbf{Use case:} Permit Telnet access solely from a particular internal subnet (\lstinline{10.10.10.0/24}):
+\begin{lstlisting}
+  access-list 105 permit tcp 10.10.10.0 0.0.0.255 any eq 23
+  access-list 105 deny ip any any                                                 
+\end{lstlisting}
+                Apply this ACL to the Telnet lines:
+\begin{lstlisting}
+  line vty 0 4
+  access-class 105 in                                              
+\end{lstlisting}
+                This configuration restricts Telnet access solely to the defined subnet, thus preventing unauthorized access.
+
+            \end{enumerate}
+
+    \subsection*{Time-Based ACLs}
+        Time-based ACLs enable network administrators to control traffic dynamically based on defined time intervals. This feature is particularly advantageous for enforcing access policies during specific times of the day or for restricting access outside of business hours~\cite{Time-Based}.
+            \begin{enumerate}
+                \item \textbf{Creating Time Ranges:} Time-based ACLs function by establishing a time range that defines when the ACL should be active. For example, you may wish to allow specific traffic during business hours (8:00 AM to 6:00 PM, Monday to Friday) and block it at other times.
+                \\[1em]
+                \textbf{Use case:} Permit web traffic (HTTP) from a specific IP range (\lstinline{192.168.1.0/24}) only during business hours (8:00 AM to 6:00 PM) on weekdays.
+\begin{lstlisting}
+  time-range WORK_HOURS
+    periodic weekdays 8:00 to 18:00                                                            
+\end{lstlisting}
+                \item \textbf{Implementing the Time-Based ACL:} Once the time range is defined, you can apply it to an ACL. In this example, the ACL allows HTTP traffic within the specified time frame and denies it outside of that time.
+\begin{lstlisting}
+  access-list 106 permit tcp 192.168.1.0 0.0.0.255 any eq 80 time-range WORK_HOURS
+  access-list 106 deny ip any any                                                                              
+\end{lstlisting}
+                \item \textbf{ImUse Cases for Time-Based ACLs:}
+                    \begin{itemize}
+                        \item \textbf{Network Access Control:} Allow staff to access certain network resources only during business hours.
+
+                        \item \textbf{Bandwidth Management:} Restrict the usage of bandwidth-intensive services (like streaming) to off-peak times.
+
+                        \item \textbf{Enhanced Security:} Automatically restrict traffic from non-essential services after business hours, which reduces the attack surface when network monitoring is reduced.
+
+                    \end{itemize}
+            \end{enumerate}
 
 
 \newpage
@@ -253,19 +338,18 @@
 
 
 
-%~\cite{Configuring-Extended-ACLs}.
+%~\cite{Configuring-Extended-ACLs}.\\[1em]
+                \textbf{Use case:} 
 
 
 
 
-Traffic Filtering
 
-One of the most common uses for ACLs is traffic filtering. They can filter based on specific criteria such as IP addresses, protocols, or services. By controlling which traffic is allowed or blocked, network administrators can enhance security. They also optimize performance and enforce access policies.
 
-Filtering Based on IP Addresses:
-You can configure ACLs to allow or deny traffic from specific source or destination IP addresses. This is useful when limiting access to certain parts of the network. For example, you might require blocking external traffic from reaching sensitive internal resources or restricting access for particular departments or subnets within a company.
 
-Use case: Imagine you intend to block traffic from the IP range 192.168.50.0/24 from entering the corporate data center (10.10.10.0/24). You could configure an extended ACL as follows:
+ACL Logging \& Monitoring
+
+
 
 
 
