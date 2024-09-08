@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1725793417.8906 "main.aux" "main.bbl" "main" 1725793509.73532 0
-  "./references.bib" 1725791728 2461 09b045c2061e2ccf6de4f6d6e8a5523e ""
+["bibtex main"] 1725800863.94262 "main.aux" "main.bbl" "main" 1725801067.68573 0
+  "./references.bib" 1725800033 2884 c9e8e4d31b78889c691b26fa0ea57a43 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1725793509 776 75ba74d3b7078b1c16bd73343cd05c33 "pdflatex"
+  "main.aux" 1725801067 1002 6d15711207ba593e62c1d77610bf67f3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1725793508.86027 "c:/Users/Lord/Desktop/Git/Article/ACL/main.tex" "main.pdf" "main" 1725793509.73563 0
+["pdflatex"] 1725801066.76884 "c:/Users/Lord/Desktop/Git/Article/ACL/main.tex" "main.pdf" "main" 1725801067.68604 0
   "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725747275 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lord/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725139274 24224574 dc7f1ddfa7aa0d1a39bc372d14d1d367 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -32,6 +32,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr17.tfm" 1256929440 11948 fa976674f030491ad35532a8a1e37325 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr6.tfm" 1256929440 11836 e3b6ce3e601aec94f64a536e7f4224d5 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr8.tfm" 1256929440 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtk10.tfm" 1256929440 1336 cd5d5949a1a8258ba2142355fab78e6f ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtt10.tfm" 1256929440 1340 adaa94f9add991a099a6fc98bbb5f02c ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ts1-lmr10.tfm" 1256929440 1556 b86d923e6b2f9aab2e313098a95cb0b8 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
@@ -39,6 +40,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb" 1256929440 113634 9384aebdf26f9881e046a4b5574566db ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb" 1256929440 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb" 1256929440 117319 28a05fff1cac98366062ffbb2e22858d ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb" 1256929440 113227 d3d1adc024746ff57b20efba82c6d365 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -108,11 +110,11 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Lord/Desktop/Git/Article/ACL/main.tex" 1725793508 36633 c822e9558333fdf35120d72eb74de017 ""
-  "main.aux" 1725793509 776 75ba74d3b7078b1c16bd73343cd05c33 "pdflatex"
-  "main.bbl" 1725793418 2423 4d61503a3005ed61b5d2773d70d9a1de "bibtex main"
-  "main.out" 1725793509 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1725793508 36633 c822e9558333fdf35120d72eb74de017 ""
+  "c:/Users/Lord/Desktop/Git/Article/ACL/main.tex" 1725801066 54150 e7d32b94e4e15744f78d841105c9ecdc ""
+  "main.aux" 1725801067 1002 6d15711207ba593e62c1d77610bf67f3 "pdflatex"
+  "main.bbl" 1725800864 2809 bf070081cf92575aa351432da2870e32 "bibtex main"
+  "main.out" 1725801067 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1725801066 54150 e7d32b94e4e15744f78d841105c9ecdc ""
   (generated)
   "main.aux"
   "main.log"

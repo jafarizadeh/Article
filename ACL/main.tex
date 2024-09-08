@@ -94,12 +94,12 @@
   Router# configure terminal
 \end{lstlisting}
 
-            \item \textbf{Create a Standard ACL:} To create a Standard ACL, execute the relevant command. In this example, traffic will be blocked from the IP address \lstinline{192.168.1.10}, while all other traffic is permitted. Standard ACLs use numbers ranging from 1 to 99.
+            \item \textbf{Create a Standard ACL:} To create a Standard ACL, execute the relevant command. In this example, traffic will be blocked from the IP address \textbf{\lstinline{192.168.1.10}}, while all other traffic is permitted. Standard ACLs use numbers ranging from 1 to 99.
 \begin{lstlisting}
   Router(config)# access-list 10 deny 192.168.1.10 0.0.0.0
   Router(config)# access-list 10 permit any
 \end{lstlisting}
-            The first command denies traffic from \lstinline{192.168.1.10}, while the second command permits all other traffic. The \lstinline{0.0.0.0} wildcard mask ensures the ACL applies only to the exact IP address specified.
+            The first command denies traffic from \textbf{\lstinline{192.168.1.10}}, while the second command permits all other traffic. The \textbf{\lstinline{0.0.0.0}} wildcard mask ensures the ACL applies only to the exact IP address specified.
 
             \item \textbf{Applying the ACL to an Interface:} Once the ACL is created, apply it to an interface to control the traffic passing through it. In this case, the ACL will be applied to inbound traffic on interface GigabitEthernet0/0.
 \begin{lstlisting}
@@ -123,14 +123,14 @@
   Router> enable
   Router# configure terminal    
 \end{lstlisting}
-            \item \textbf{Create an Extended ACL:} Extended ACLs use numbers from 100 to 199 or 2000 to 2699. The example below demonstrates how to block HTTP traffic (port 80) from the source IP \lstinline{192.168.2.0/24} to the destination \lstinline{10.1.1.0/24}. All other traffic will be permitted.
+            \item \textbf{Create an Extended ACL:} Extended ACLs use numbers from 100 to 199 or 2000 to 2699. The example below demonstrates how to block HTTP traffic (port 80) from the source IP \textbf{\lstinline{192.168.2.0/24}} to the destination \textbf{\lstinline{10.1.1.0/24}}. All other traffic will be permitted.
 
 \begin{lstlisting}
   Router(config)# access-list 110 deny tcp 192.168.2.0 0.0.0.255 10.1.1.0 0.0.0.255 eq 80
   Router(config)# access-list 110 permit ip any any    
 \end{lstlisting}
 
-            The \lstinline{"deny tcp"} command indicates that TCP traffic from \lstinline{192.168.2.0} to \lstinline{10.1.1.0} on port 80 (HTTP) will be denied. The \lstinline{"permit ip any any"} rule permits all other traffic to pass through.
+            The \textbf{\lstinline{"deny tcp"}} command indicates that TCP traffic from \textbf{\lstinline{192.168.2.0}} to \textbf{\lstinline{10.1.1.0}} on port 80 (HTTP) will be denied. The \textbf{\lstinline{"permit ip any any"}} rule permits all other traffic to pass through.
 
             \item \textbf{Apply the Extended ACL to an Interface:} Similar to Standard ACLs, it is necessary to attach the Extended ACL to a specific interface to control the flow of traffic.
 \begin{lstlisting}
@@ -150,7 +150,7 @@
     \subsection*{Named ACLs}
     Named ACLs assist with easier management and scalability, especially in larger networks where access control needs can become complex. The primary difference between numbered ACLs and named ACLs is that named ACLs use descriptive names that describe their functions instead of just numbers, making them simpler to identify and update.
         \begin{enumerate}
-            \item \textbf{Create a Named ACL:} Rather than using a number, create your ACL with a name. For instance, create a named ACL called \lstinline{BLOCK_HTTP} that blocks HTTP traffic from \lstinline{192.168.3.0/24} to \lstinline{10.1.2.0/24}.
+            \item \textbf{Create a Named ACL:} Rather than using a number, create your ACL with a name. For instance, create a named ACL called \textbf{\lstinline{BLOCK_HTTP}} that blocks HTTP traffic from \textbf{\lstinline{192.168.3.0/24}} to \textbf{\lstinline{10.1.2.0/24}}.
 \begin{lstlisting}
   Router(config)# ip access-list extended BLOCK_HTTP
   Router(config-ext-nacl)# deny tcp 192.168.3.0 0.0.0.255 10.1.2.0 0.0.0.255 eq 80
@@ -164,7 +164,7 @@
             
             \item \textbf{Advantages of Named ACLs:} Named ACLs make management easier in various ways:
                 \begin{itemize}
-                    \item \textbf{Descriptive Names:} Using names such as \lstinline{BLOCK_HTTP}  allows network administrators to easily understand the ACL's intent. There’s no need to remember complex numerical ranges.
+                    \item \textbf{Descriptive Names:} Using names such as \textbf{\lstinline{BLOCK_HTTP}}  allows network administrators to easily understand the ACL's intent. There’s no need to remember complex numerical ranges.
 
                     \item \textbf{Modifications:} Named ACLs facilitate easier editing. Rather than having to remove and recreate the entire list, administrators can simply modify specific rules within a named ACL. This process does not affect the entire access list.
 
@@ -213,7 +213,7 @@
   access-list 100 deny tcp 192.168.1.0 0.0.0.255 any eq 80
   access-list 100 permit ip any any
 \end{lstlisting}
-            Initially, this ACL denies HTTP traffic from the \lstinline{192.168.1.0} network while permitting all other traffic afterward. However, if you reverse the order of these entries, the \lstinline{"permit ip any any"} rule would allow all traffic before the HTTP block is evaluated.
+            Initially, this ACL denies HTTP traffic from the \textbf{\lstinline{192.168.1.0}} network while permitting all other traffic afterward. However, if you reverse the order of these entries, the \textbf{\lstinline{"permit ip any any"}} rule would allow all traffic before the HTTP block is evaluated.
 
             \item \textbf{Why Ordering Matters:} 
                 \begin{itemize}
@@ -250,7 +250,7 @@
             \begin{enumerate}
                 \item \textbf{Filtering Based on IP Addresses:} You can configure ACLs to allow or deny traffic from specific source or destination IP addresses. This is useful when limiting access to certain parts of the network. For example, you might require blocking external traffic from reaching sensitive internal resources or restricting access for particular departments or subnets within a company.
                 \\[1em]
-                \textbf{Use case:} Imagine you intend to block traffic from the IP range \lstinline{192.168.50.0/24} from entering the corporate data center (\lstinline{10.10.10.0/24}). You could configure an extended ACL as follows:
+                \textbf{Use case:} Imagine you intend to block traffic from the IP range \textbf{\lstinline{192.168.50.0/24}} from entering the corporate data center (\textbf{\lstinline{10.10.10.0/24}}). You could configure an extended ACL as follows:
 \begin{lstlisting}
   access-list 101 deny ip 192.168.50.0 0.0.0.255 10.10.10.0 0.0.0.255
   access-list 101 permit ip any any
@@ -259,7 +259,7 @@
 
                 \item \textbf{Filtering Traffic Using Protocols:} ACLs can filter traffic based on certain protocols, including TCP, UDP, ICMP, and others. For instance, you might wish to block all ICMP (ping) traffic from external networks. This helps mitigate denial-of-service attacks or reconnaissance attempts.
                 \\[1em]
-                \textbf{Use case:} To block ICMP traffic from an external network, such as \lstinline{203.0.113.0/24}, you could configure an ACL as follows:
+                \textbf{Use case:} To block ICMP traffic from an external network, such as \textbf{\lstinline{203.0.113.0/24}}, you could configure an ACL as follows:
 \begin{lstlisting}
   access-list 102 deny icmp 203.0.113.0 0.0.0.255 any
   access-list 102 permit ip any any
@@ -267,7 +267,7 @@
 
                 \item \textbf{Filtering Traffic by Services (Ports):} Extended ACLs can also control traffic based on specific ports or services. For example, it is possible to block HTTP (port 80) or FTP (port 21) traffic. This enables detailed control over which services can be accessed on the network.
                 \\[1em]
-                \textbf{Use case:} If you intend to block all HTTP traffic from the IP range \lstinline{192.168.1.0/24} to the outside world while allowing other types of traffic, the configuration might appear as follows:
+                \textbf{Use case:} If you intend to block all HTTP traffic from the IP range \textbf{\lstinline{192.168.1.0/24}} to the outside world while allowing other types of traffic, the configuration might appear as follows:
 \begin{lstlisting}
   access-list 103 deny tcp 192.168.1.0 0.0.0.255 any eq 80
   access-list 103 permit ip any any                    
@@ -280,7 +280,7 @@
             \begin{enumerate}
                 \item \textbf{Limiting SSH Access:} SSH (Secure Shell) is commonly used for securely managing Cisco devices remotely. However, if SSH access is not properly controlled, it creates a security risk, particularly when connected to the internet. By using ACLs, administrators can restrict SSH access to only trusted IP addresses.
                 \\[1em]
-                \textbf{Use case:} If you intend to allow only a specific IP address (\lstinline{192.168.100.10}) to SSH into a router, you can configure an ACL as shown below:
+                \textbf{Use case:} If you intend to allow only a specific IP address (\textbf{\lstinline{192.168.100.10}}) to SSH into a router, you can configure an ACL as shown below:
 \begin{lstlisting}
   access-list 104 permit tcp host 192.168.100.10 any eq 22
   access-list 104 deny ip any any                  
@@ -291,7 +291,7 @@
 
                 \item \textbf{Restricting Telnet Access:} Similar to SSH, Telnet can also be restricted through ACLs. However, it is important to emphasize that Telnet is not recommended for secure access since it transmits data in plain text. If Telnet needs to be used internally, and you wish to restrict it to specific devices, an ACL can be applied in the same way as with SSH.
                 \\[1em]
-                \textbf{Use case:} Permit Telnet access solely from a particular internal subnet (\lstinline{10.10.10.0/24}):
+                \textbf{Use case:} Permit Telnet access solely from a particular internal subnet (\textbf{\lstinline{10.10.10.0/24}}):
 \begin{lstlisting}
   access-list 105 permit tcp 10.10.10.0 0.0.0.255 any eq 23
   access-list 105 deny ip any any                                                 
@@ -310,7 +310,7 @@
             \begin{enumerate}
                 \item \textbf{Creating Time Ranges:} Time-based ACLs function by establishing a time range that defines when the ACL should be active. For example, you may wish to allow specific traffic during business hours (8:00 AM to 6:00 PM, Monday to Friday) and block it at other times.
                 \\[1em]
-                \textbf{Use case:} Permit web traffic (HTTP) from a specific IP range (\lstinline{192.168.1.0/24}) only during business hours (8:00 AM to 6:00 PM) on weekdays.
+                \textbf{Use case:} Permit web traffic (HTTP) from a specific IP range (\textbf{\lstinline{192.168.1.0/24}}) only during business hours (8:00 AM to 6:00 PM) on weekdays.
 \begin{lstlisting}
   time-range WORK_HOURS
     periodic weekdays 8:00 to 18:00                                                            
@@ -333,24 +333,24 @@
 
 \section*{ACL Logging \& Monitoring}
             \subsection*{Configuring ACL Logging}
-            ACL logging is a vital feature that allows network administrators to monitor traffic that Access Lists permit or deny. By enabling logging on ACLs, the system records each time a rule is triggered. This provides detailed data about the source, destination, protocol, and port used. It can be highly useful for troubleshooting and conducting security audits.
+            ACL logging is a vital feature that allows network administrators to monitor traffic that Access Lists permit or deny. By enabling logging on ACLs, the system records each time a rule is triggered. This provides detailed data about the source, destination, protocol, and port used. It can be highly useful for troubleshooting and conducting security audits~\cite{ACL-Logging}.
 
             \begin{enumerate}
-                \item \textbf{Enabling ACL Logging:} To enable logging for a specific ACL rule, add the \lstinline{log} keyword at the end of the ACL statement. This instructs the Cisco device to log traffic whenever that rule matches.
+                \item \textbf{Enabling ACL Logging:} To enable logging for a specific ACL rule, add the \textbf{\lstinline{log}} keyword at the end of the ACL statement. This instructs the Cisco device to log traffic whenever that rule matches.
                 \\[1em]
-                \textbf{Example:} to deny and log traffic from \lstinline{192.168.1.0/24} to a destination network of \lstinline{10.10.10.0/24}:
+                \textbf{Example:} to deny and log traffic from \textbf{\lstinline{192.168.1.0/24}} to a destination network of \textbf{\lstinline{10.10.10.0/24}}:
 \begin{lstlisting}
   access-list 110 deny ip 192.168.1.0 0.0.0.255 10.10.10.0 0.0.0.255 log
   access-list 110 permit ip any any                                                                                              
 \end{lstlisting}
-                Using the \lstinline{log} keyword ensures that any time traffic from \lstinline{192.168.1.0} is denied, a log entry is created. You can view these logs using the syslog system or other monitoring tools.
+                Using the \textbf{\lstinline{log}} keyword ensures that any time traffic from \textbf{\lstinline{192.168.1.0}} is denied, a log entry is created. You can view these logs using the syslog system or other monitoring tools.
 
 
                 \item \textbf{Best Practice:} Exercise caution when enabling logging on ACLs for busy interfaces. Excessive logging may impact performance. Therefore, it is wise to enable logging selectively, focusing on critical rules that require monitoring.
 
             \end{enumerate}
     \subsection*{Interpreting ACL Logs}
-        When you enable ACL logging, it generates logs containing valuable information about the traffic that passes through or is blocked by the network. Correctly interpreting these logs is essential for troubleshooting issues, identifying security threats, and performing audits.
+        When you enable ACL logging, it generates logs containing valuable information about the traffic that passes through or is blocked by the network. Correctly interpreting these logs is essential for troubleshooting issues, identifying security threats, and performing audits~\cite{Interpreting-ACL-Logs}.
 
         \begin{enumerate}
             \item \textbf{Understanding ACL Log Entries:} A standard ACL log entry includes several key pieces of information:
@@ -368,7 +368,7 @@
 \begin{lstlisting}
 %SEC-6-IPACCESSLOGP: list 110 denied tcp 192.168.1.50(34675) -> 10.10.10.100(80), 1 packet                                                                        
 \end{lstlisting}
-                This log entry indicates that an ACL (list 110) denied a TCP packet originating from source IP \lstinline{192.168.1.50}, using source port \lstinline{34675}, and directed at destination IP \lstinline{10.10.10.100} on destination port \lstinline{80} (HTTP).
+                This log entry indicates that an ACL (list 110) denied a TCP packet originating from source IP \textbf{\lstinline{192.168.1.50}}, using source port \textbf{\lstinline{34675}}, and directed at destination IP \textbf{\lstinline{10.10.10.100}} on destination port \textbf{\lstinline{80}} (HTTP).
 
             \item \textbf{Utilizing Logs for Troubleshooting:} ACL logs are extremely useful for resolving network issues. When users report difficulty accessing a specific service, you can investigate the ACL logs to determine if traffic directed to that service is being blocked by an ACL. Additionally, by reviewing these logs, administrators can identify unusual traffic patterns, such as repeated attempts to reach restricted services or unauthorized access from specific IP addresses.
             \\[1em]
@@ -376,7 +376,7 @@
 
         \end{enumerate}
     \subsection*{Employing Tools for ACL Monitoring}
-    Manually monitoring ACLs through logs can be challenging, especially in large-scale and high-traffic environments. Fortunately, numerous monitoring tools are available to assist in visualizing network traffic trends, detecting security incidents, and simplifying the management of ACLs.
+    Manually monitoring ACLs through logs can be challenging, especially in large-scale and high-traffic environments. Fortunately, numerous monitoring tools are available to assist in visualizing network traffic trends, detecting security incidents, and simplifying the management of ACLs~\cite{Splunk}.
 
         \begin{enumerate}
             \item \textbf{Syslog for Log Centralization:} Cisco devices can connect with \textbf{syslog} servers to collect and store ACL logs for long-term analysis. These syslog servers aggregate logs from multiple network devices, simplifying analysis and correlating events across the network.
@@ -399,6 +399,202 @@
         \end{enumerate}
 
 \section*{Common Mistakes and Troubleshooting}
+    \subsection*{Top ACL Misconfigurations}
+    Using Access Control Lists (ACLs) is an effective way to secure and manage network traffic. However, if they are not configured correctly, it can result in serious security vulnerabilities and service interruptions. The following are common mistakes made when setting up ACLs, along with guidance on how to avoid these errors.
+    \begin{enumerate}
+        \item \textbf{Incorrect Order of ACL Entries:} ACLs are processed in a specific sequence, making the order of the rules critically important. A frequent mistake is placing general rules (such as \textbf{\lstinline{permit ip any any}}) ahead of more specific ones. This can lead to unintended traffic being permitted or blocked, as the broad rule is processed first, before the specific one.
+        \\[1em]
+        \textbf{Best Practice:} Always position more specific deny or permit rules at the top of the ACL, and place general rules (such as "permit all remaining traffic") at the end.
+        \\[1em]
+        \textbf{Example of Incorrect Order:}
+\begin{lstlisting}
+  access-list 100 permit ip any any
+  access-list 100 deny tcp 192.168.1.0 0.0.0.255 any eq 80                                           
+\end{lstlisting}
+        In this example, all traffic will be allowed, including traffic that should have been blocked by the second rule.
+
+        \item \textbf{Implicit Deny All Rule:} Every ACL includes an implicit "deny all" rule at its conclusion, even if it is not explicitly written out. A common error is overlooking this rule and assuming that traffic not explicitly denied will be automatically allowed.
+        \\[1em]
+        \textbf{Best Practice:} Always write explicit permit rules for any traffic you want to allow, as traffic not covered by any rule will be denied by default.
+
+        \item \textbf{Excessive Permit/Deny Statements:} It's important to keep ACLs streamlined. Using too many permit/deny statements can cause confusion and can lead to performance issues. For instance, multiple redundant deny or permit statements can create inefficiency. This also makes the ACL much harder to manage.
+        \\[1em]
+        \textbf{Best Practice:} Always try to consolidate whenever possible. Instead of writing separate lines for each rule, use wildcard masks to effectively summarize IP ranges or ports.
+        \\[1em]
+        \textbf{Example:} Rather than having multiple rules like this:
+
+\begin{lstlisting}
+  access-list 101 deny ip 192.168.1.1 0.0.0.0 any
+  access-list 101 deny ip 192.168.1.2 0.0.0.0 any                                                      
+\end{lstlisting}
+
+        You could simplify it with:
+
+\begin{lstlisting}
+  access-list 101 deny ip 192.168.1.0 0.0.0.255 any                                                     
+\end{lstlisting}
+
+        \item \textbf{Not Applying to Interfaces:} A common mistake is writing an ACL but failing to apply it to an interface. This renders the ACL ineffective.
+        \\[1em]
+        \textbf{Best Practice:} After creating an ACL, always ensure that you apply it to the correct interface. Also, remember to specify the correct direction—either inbound or outbound.
+\begin{lstlisting}
+  interface gigabitEthernet 0/0
+  ip access-group 101 in                                                    
+\end{lstlisting}
+
+        \item \textbf{Incorrect Use of Wildcard Masks:} If you misconfigure the wildcard mask (or inverse mask), it may lead to unintended permission or denial of traffic. A wrong wildcard mask might block a larger or smaller range of IP addresses than you intended.
+        \\[1em]
+        \textbf{Best Practice:} Always verify your wildcard masks. Ensure they cover the correct IP range. If unsure, you can use online subnet calculators to confirm correct masking~\cite{}.
+
+    \end{enumerate}
+
+    \subsection*{Troubleshooting ACLs} When ACLs do not function as expected, it is essential to adopt a systematic approach for troubleshooting. Cisco devices provide commands that assist in diagnosing ACL issues~\cite{Troubleshooting}.
+
+    \begin{enumerate}
+        \item \textbf{\lstinline{show access-lists:}} This command provides detailed insights about the configured ACLs on the device. It includes information on ACL entries, the number of matches for each rule, and the status of traffic (whether it is being permitted or denied).
+        \\[1em]
+        \textbf{Example:}
+\begin{lstlisting}
+  Router# show access-lists                                           
+\end{lstlisting}
+        The output might look like this:
+\begin{lstlisting}
+  Extended IP access list 110
+  10 deny ip 192.168.1.0 0.0.0.255 any (500 matches)
+  20 permit ip any any (1000 matches)                  
+\end{lstlisting}
+        The count of matches for each rule provides valuable insight into whether traffic is interacting with the expected ACL rules.
+        \\[1em]
+        \textbf{Best Practice:} Use this command to check that traffic is reaching the ACL and that the rules are functioning as intended. If certain traffic is blocked or allowed when it should not be, examine the hit counts to identify where the traffic is being matched.
+
+        \item \textbf{\lstinline{show ip interface:}} The show interface command displays which ACLs are applied to the interfaces, showing whether they are configured as inbound or outbound. This is useful for ensuring that the correct ACL is applied to the appropriate interface and direction.
+        \\[1em]
+        \textbf{Example:}
+\begin{lstlisting}
+  Router# show ip interface gigabitEthernet 0/0                                         
+\end{lstlisting}
+        Output:
+\begin{lstlisting}
+  GigabitEthernet0/0 is up, line protocol is up
+  Inbound access list is 101
+  Outbound access list is not set                   
+\end{lstlisting}
+        \textbf{Best Practice:} Use this command to verify that the ACL is applied correctly regarding direction and interface. If an ACL is applied incorrectly (for example, inbound when it should be outbound), then the traffic will not be filtered as intended.
+
+        \item \textbf{\lstinline{debug ip packet:}}The debug ip packet command can aid in real-time debugging of traffic flowing through the device. It reveals how packets are processed, indicating whether they are permitted or denied by an ACL.
+        \\[1em]
+        \textbf{Example:}
+\begin{lstlisting}
+  Router# debug ip packet detail                                        
+\end{lstlisting}
+        \textbf{Best Practice:} Exercise caution when using this command, especially in busy environments, as it can generate a large volume of output. It is most effective for targeted troubleshooting scenarios where you need to track individual packets and observe their interaction with ACLs.
+
+        \item \textbf{\lstinline{Show Running-Config:}} Reviewing the full running configuration can reveal whether ACLs are correctly configured and applied. Errors often occur due to incorrect entries in the ACL or failure to apply them to the appropriate interfaces.
+        \\[1em]
+        \textbf{Example:}
+\begin{lstlisting}
+  Router# show running-config                                       
+\end{lstlisting}
+        \textbf{Best Practice:} Use this command to verify ACLs and ensure they are applied to the correct interfaces.    
+    \end{enumerate}
+
+    \subsection*{Additional Troubleshooting Tips}
+        \begin{enumerate}
+            \item \textbf{Step-by-Step Diagnosis:}
+                \begin{itemize}
+                    \item First, verify that the ACL is applied to the correct interface and in the appropriate direction by using the command \textbf{\lstinline{"show ip interface"}}.
+                    \item Next, review the ACL with \textbf{\lstinline{"show access-lists"}} to ensure the rules are in the correct order and properly applied.
+                    \item You can also use match counts from \textbf{\lstinline{"show access-lists"}} to verify whether traffic matches the expected ACL rules.
+                    \item If problems persist, consider using real-time debugging tools (such as \textbf{\lstinline{"debug ip packet"}}) to monitor traffic and verify the actions being taken by the ACL.
+
+                \end{itemize}
+            \item \textbf{Avoid Using ACLs for Troubleshooting Network Connectivity:} While ACLs help filter traffic, they are not designed for general network troubleshooting. If there are issues with network connectivity, start with simple tests first (such as \textbf{\lstinline{ping}} or \textbf{\lstinline{traceroute}}). Only investigate ACLs if you are certain they could be causing the issue.
+        \end{enumerate}
+
+\section*{ACL Security Use Cases}
+    \subsection*{Mitigating DDoS Attacks}
+    Distributed Denial of Service (DDoS) attacks are harmful. Their objective is to overwhelm network resources with malicious traffic, which can lead to service outages. However, Access Control Lists (ACLs) are effective tools for mitigating DDoS attacks. They assist by filtering out malicious traffic before it can consume bandwidth and other critical network resources. By identifying attack patterns, ACLs can be configured to block those patterns, ensuring legitimate traffic continues.
+    \begin{enumerate}
+        \item \textbf{Filtering Unwanted Traffic:} During a DDoS attack, attackers send a large volume of requests from numerous IP addresses, often fake or originating from compromised devices. It is crucial to detect suspicious patterns, such as an excessive number of ICMP or SYN requests. ACLs can filter out this harmful traffic at the network's edge, preventing it from reaching critical resources.
+        \\[1em]
+        \textbf{Use case:} To stop a SYN flood attack (a common type of DDoS), an extended ACL can block SYN packets from all but trusted IP ranges. Here’s an example of how that would look:
+\begin{lstlisting}
+  access-list 120 deny tcp any any eq 80 tcp-flags syn log
+  access-list 120 permit ip any any                                      
+\end{lstlisting}
+        In this setup, all incoming SYN packets directed to HTTP services (port 80) are blocked, while logging the denied traffic for future analysis. The next rule allows all other valid traffic to pass through.
+
+        \item \textbf{Blocking Spoofed IP Addresses:} Attackers frequently use IP spoofing during DDoS assaults. You can configure ACLs to block known invalid or potentially suspicious IP ranges, which will reduce the effectiveness of these attacks.
+        \\[1em]
+        \textbf{Use case:} To block spoofed IP addresses originating from private address spaces (such as \textbf{\lstinline{10.0.0.0/8}}), which should not appear in public traffic, you can set the following ACL:
+\begin{lstlisting}
+  access-list 130 deny ip 10.0.0.0 0.255.255.255 any log
+  access-list 130 deny ip 192.168.0.0 0.0.255.255 any log
+  access-list 130 permit ip any any                                                 
+\end{lstlisting}
+        Monitor traffic patterns by using ACL logging and adjust the ACLs based on the behavior of incoming traffic. ACLs can also be combined with rate-limiting techniques to control the bandwidth allocated to certain types of traffic, particularly during an attack.
+
+    \end{enumerate}
+
+    \subsection*{Zero Trust Network Access (ZTNA)}
+    Zero Trust Network Access (ZTNA) is a security model based on the principle of "never trust, always verify." In this approach, no user or device is trusted by default. This applies even to users and devices within the network perimeter. ACLs are valuable within a Zero Trust strategy, as they aid in controlling access to resources with precision. Only authorized users and devices are permitted access to sensitive assets.
+
+    \begin{enumerate}
+        \item \textbf{Granular Access Control:} With ACLs, administrators can establish and enforce granular access controls that align with the Zero Trust model. Rather than permitting broad network access, ACLs restrict access based on defined roles, devices, or applications.
+        \\[1em]
+        \textbf{Use case:} Consider if a specific department, such as HR, should only access the internal HR application servers (\textbf{\lstinline{10.10.20.0/24}}). You can configure an ACL to limit access exclusively from their subnet to those resources:
+\begin{lstlisting}
+  access-list 140 permit ip 192.168.10.0 0.0.0.255 10.10.20.0 0.0.0.255
+  access-list 140 deny ip any any                                                       
+\end{lstlisting}
+        This setup permits only devices from the HR subnet (\textbf{\lstinline{192.168.10.0/24}}) to connect to the HR application servers. Consequently, all other traffic originating from the HR subnet is denied.
+
+
+        \item \textbf{Microsegmentation:} Within a Zero Trust model, network segmentation ensures that different parts of the network remain isolated from one another. This limits the potential for threats to move laterally within the system. ACLs play a crucial role in implementing \textbf{microsegmentation} by restricting access between different network segments.
+        \\[1em]
+        \textbf{Use case:} To implement microsegmentation between various departments (for example, restricting communication between HR and Finance networks), configure ACLs to block traffic between those specific segments while allowing necessary traffic:
+\begin{lstlisting}
+  access-list 150 deny ip 192.168.10.0 0.0.0.255 192.168.20.0 0.0.0.255
+  access-list 150 permit ip any any                                
+\end{lstlisting}
+        This configuration ensures that devices in HR cannot reach the resources of the Finance department. This aligns with the Zero Trust model's principle of least privilege.
+
+    \end{enumerate}
+
+    \subsection*{Protecting Against Insider Threats}
+    Although external threats remain a major concern, insider threats—whether intentional or unintentional—pose a significant risk to network security. Using ACLs can help mitigate the risks posed by compromised or malicious users within the network; they control internal traffic and prevent unauthorized access to critical resources.
+
+        \begin{enumerate}
+            \item \textbf{Regulating Access to Essential Resources:} ACLs can be utilized to limit access to crucial internal resources such as databases or file servers. Access can be based on user roles or departments, preventing unauthorized individuals from accessing sensitive information.
+            \\[1em]
+            \textbf{Use case:} To secure a critical database located at \textbf{\lstinline{10.20.30.40}}, restrict its access so that only authorized users from the IT department (\textbf{\lstinline{192.168.100.0/24}}) are authorized to access it:
+\begin{lstlisting}
+  access-list 160 permit tcp 192.168.100.0 0.0.0.255 host 10.20.30.40 eq 3306
+  access-list 160 deny ip any host 10.20.30.40 log                            
+\end{lstlisting}
+            This ACL allows only traffic from the IT department over port 3306 (MySQL) while denying all other access attempts to the database. Additionally, it logs denied traffic for auditing and monitoring purposes.
+
+            \item \textbf{Preventing Lateral Movement:} In the event that an insider threat compromises a device, it is essential to restrict an attacker’s movement across the network. Implementing Access Control Lists (ACLs) can prevent unauthorized communication between different areas of the internal network.
+            \\[1em]
+            \textbf{Use case:} To hinder lateral movement between user workstations, you can configure ACLs that restrict communication across subnets:
+\begin{lstlisting}
+  access-list 170 deny ip 192.168.50.0 0.0.0.255 192.168.60.0 0.0.0.255
+  access-list 170 permit ip any any                            
+\end{lstlisting}
+            This ACL stops traffic between the 192.168.50.0/24 and 192.168.60.0/24 networks, thus limiting an attacker’s ability to shift between different sections of the network after compromising one device.
+
+            \item \textbf{Monitoring and Alerting on Suspicious Activity:} By enabling ACL logging, administrators can detect unusual or unauthorized access attempts within the network. ACL logs can then be forwarded to a centralized monitoring system for real-time analysis and alerts.
+            \\[1em]
+            \textbf{Use case:} Enable logging for an ACL that manages access to a secure internal system, ensuring that all unauthorized access attempts are recorded:
+
+\begin{lstlisting}
+  access-list 180 permit ip host 192.168.100.100 host 10.30.40.50 log
+  access-list 180 deny ip any host 10.30.40.50 log                             
+\end{lstlisting}
+        \end{enumerate}
+
+            This setup logs both permitted and denied traffic to the secure system. You can analyze these logs using tools like Splunk or Cisco Security Manager to detect insider threats early.
+
 
 \newpage
 
@@ -407,6 +603,23 @@
 %~\cite{Configuring-Extended-ACLs}.\\[1em]
                 \textbf{Use case:} 
 
+
+
+
+
+Use Case:
+
+%code
+
+
+Real-World Example: Configuring ACLs for a Small Enterprise
+
+
+
+
+
+
+                
 
 
 

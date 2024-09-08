@@ -1,62 +1,59 @@
 \begin{thebibliography}{10}
 
 \bibitem{Introduction}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html}{\newline
-  configure and filter ip access lists}.
+\href{https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html}{
+  Configure and Filter IP Access Lists}.
 
 \bibitem{std-ext}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html#GUID-65122EB8-E317-4172-8D2D-AC8DE3E0A2CF}{\newline
-  security configuration guide: access control lists}.
+\href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/15-mt/sec-data-acl-15-mt-book/sec-access-list-ov.html#GUID-65122EB8-E317-4172-8D2D-AC8DE3E0A2CF}{
+  Security Configuration Guide: Access Control Lists}.
 
 \bibitem{Implementing}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.netacad.com/courses/security/implementing-access-control-lists}{\newline
-  implementing access control lists (acls).}
+\href{https://www.netacad.com/courses/security/implementing-access-control-lists}{
+  Implementing Access Control Lists (ACLs).}
 
 \bibitem{Configuring-Standard-ACLs}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/c/en/us/td/docs/security/asa/asa92/configuration/general/asa-general-cli/acl-standard.pdf}{\newline
-  standard access control lists}.
+\href{https://www.cisco.com/c/en/us/td/docs/security/asa/asa92/configuration/general/asa-general-cli/acl-standard.pdf}{
+  Standard Access Control Lists}.
 
 \bibitem{Configuring-Extended-ACLs}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/c/en/us/td/docs/security/asa/asa92/configuration/general/asa-general-cli/acl-extended.pdf}{\newline
-  extended access control lists}.
+\href{https://www.cisco.com/c/en/us/td/docs/security/asa/asa92/configuration/general/asa-general-cli/acl-extended.pdf}{
+  Extended Access Control Lists}.
 
 \bibitem{Configuring-Named-ACLs}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-acl-named.pdf}{\newline
-  named access control lists}.
+\href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16-12/sec-data-acl-xe-16-12-book/sec-acl-named.pdf}{
+  Named Access Control Lists}.
 
 \bibitem{How-Work}
-\textbf{twingate}.
-\newblock \href{https://www.twingate.com/blog/access-control-list}{\newline how
-  they work \& best practices}.
+\href{https://www.twingate.com/blog/access-control-list}{ How They Work \& Best
+  Practices}.
 
 \bibitem{Traffic-Filtering}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli_rel_4_1/Cisco_Nexus_5000_Series_Switch_CLI_Software_Configuration_Guide_chapter21.pdf}{\newline
-  configuring access control lists}.
+\href{https://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli_rel_4_1/Cisco_Nexus_5000_Series_Switch_CLI_Software_Configuration_Guide_chapter21.pdf}{
+  Configuring Access Control Lists}.
 
 \bibitem{Security-Management}
-\textbf{Cisco}.
-\newblock
-  \href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16/sec-data-acl-xe-16-book.pdf}{\newline
-  security configuration guide: access control lists}.
+\href{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_data_acl/configuration/xe-16/sec-data-acl-xe-16-book.pdf}{
+  Security Configuration Guide: Access Control Lists}.
 
 \bibitem{Time-Based}
-\textbf{Cisco}.
-\newblock
-  \href{https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/5991-discussions-wan-routing-switching/171265/1/112661-time%20base%20accesslist.pdf}{\newline
-  time-based access lists using time ranges}.
+\href{https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/5991-discussions-wan-routing-switching/171265/1/112661-time%20base%20accesslist.pdf}{
+  Time-Based Access Lists Using Time Ranges}.
+
+\bibitem{ACL-Logging}
+\href{https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus6000/sw/qos/7x/b_6k_QoS_Config_7x/configuring_acl_logging.pdf}{
+  Configuring ACL Logging}.
+
+\bibitem{Interpreting-ACL-Logs}
+\href{https://sec.cloudapps.cisco.com/security/center/resources/access_control_list_logging.html}{
+  Understanding Access Control List Logging}.
+
+\bibitem{Splunk}
+\href{https://lantern.splunk.com/Security/Getting_Started/Using_Enterprise_Security_for_security_investigation_and_monitoring}{
+  Using Splunk for Cisco ACL Monitoring and Security Analytics}.
+
+\bibitem{Troubleshooting}
+\href{https://www.cisco.com/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/troubleshooting/guide/ts_acl.pdf}{
+  Troubleshooting IP Access Lists}.
 
 \end{thebibliography}
