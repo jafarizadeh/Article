@@ -513,7 +513,7 @@
 
 \section*{ACL Security Use Cases}
     \subsection*{Mitigating DDoS Attacks}
-    Distributed Denial of Service (DDoS) attacks are harmful. Their objective is to overwhelm network resources with malicious traffic, which can lead to service outages. However, Access Control Lists (ACLs) are effective tools for mitigating DDoS attacks. They assist by filtering out malicious traffic before it can consume bandwidth and other critical network resources. By identifying attack patterns, ACLs can be configured to block those patterns, ensuring legitimate traffic continues.
+    Distributed Denial of Service (DDoS) attacks are harmful. Their objective is to overwhelm network resources with malicious traffic, which can lead to service outages. However, Access Control Lists (ACLs) are effective tools for mitigating DDoS attacks. They assist by filtering out malicious traffic before it can consume bandwidth and other critical network resources. By identifying attack patterns, ACLs can be configured to block those patterns, ensuring legitimate traffic continues~\cite{DDoS-Attacks}\cite{DDoS-Attacks-2}.
     \begin{enumerate}
         \item \textbf{Filtering Unwanted Traffic:} During a DDoS attack, attackers send a large volume of requests from numerous IP addresses, often fake or originating from compromised devices. It is crucial to detect suspicious patterns, such as an excessive number of ICMP or SYN requests. ACLs can filter out this harmful traffic at the network's edge, preventing it from reaching critical resources.
         \\[1em]
@@ -537,7 +537,7 @@
     \end{enumerate}
 
     \subsection*{Zero Trust Network Access (ZTNA)}
-    Zero Trust Network Access (ZTNA) is a security model based on the principle of "never trust, always verify." In this approach, no user or device is trusted by default. This applies even to users and devices within the network perimeter. ACLs are valuable within a Zero Trust strategy, as they aid in controlling access to resources with precision. Only authorized users and devices are permitted access to sensitive assets.
+    Zero Trust Network Access (ZTNA) is a security model based on the principle of "never trust, always verify." In this approach, no user or device is trusted by default. This applies even to users and devices within the network perimeter. ACLs are valuable within a Zero Trust strategy, as they aid in controlling access to resources with precision. Only authorized users and devices are permitted access to sensitive assets~\cite{ZTNA}.
 
     \begin{enumerate}
         \item \textbf{Granular Access Control:} With ACLs, administrators can establish and enforce granular access controls that align with the Zero Trust model. Rather than permitting broad network access, ACLs restrict access based on defined roles, devices, or applications.
@@ -562,7 +562,7 @@
     \end{enumerate}
 
     \subsection*{Protecting Against Insider Threats}
-    Although external threats remain a major concern, insider threats—whether intentional or unintentional—pose a significant risk to network security. Using ACLs can help mitigate the risks posed by compromised or malicious users within the network; they control internal traffic and prevent unauthorized access to critical resources.
+    Although external threats remain a major concern, insider threats—whether intentional or unintentional—pose a significant risk to network security. Using ACLs can help mitigate the risks posed by compromised or malicious users within the network; they control internal traffic and prevent unauthorized access to critical resources~\cite{Insider-Threats}.
 
         \begin{enumerate}
             \item \textbf{Regulating Access to Essential Resources:} ACLs can be utilized to limit access to crucial internal resources such as databases or file servers. Access can be based on user roles or departments, preventing unauthorized individuals from accessing sensitive information.
@@ -740,7 +740,7 @@ In this example, we will configure Access Control Lists (ACLs) for a small to me
 
 \section*{Recent Innovations and Changes in ACLs}
     \subsection*{ACL Enhancements in Recent Cisco IOS Versions}
-        Cisco has introduced numerous improvements to Access Control Lists (ACLs) in its IOS versions. These changes introduce new features and optimizations, enhancing ACL efficiency and versatility for modern network requirements. Below are some key updates found in recent Cisco IOS versions:
+        Cisco has introduced numerous improvements to Access Control Lists (ACLs) in its IOS versions. These changes introduce new features and optimizations, enhancing ACL efficiency and versatility for modern network requirements. Below are some key updates found in recent Cisco IOS versions:~\cite{Enhancements}
             \begin{enumerate}
                 \item \textbf{Optimized ACL Processing:} Recent Cisco IOS releases have improved how ACLs are processed, particularly in high-performance routers and switches. These enhancements ensure that ACLs can handle larger rule sets and more complex filtering without significantly impacting performance.
 
