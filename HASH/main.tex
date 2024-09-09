@@ -21,6 +21,16 @@
   breaklines=true 
 }
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Cryptographic Hash Functions},
+    pdfpagemode=FullScreen,
+}
+
+
 \title{HASH}
 \author{Mehdi JAFARIZADEH}
 \date{aute 29, 2024}
@@ -40,7 +50,7 @@ Hash algorithms are essential in today’s world. They convert input data of any
 
 
     \subsection*{What is a Hash Algorithm?}
-    At their heart, \textbf{hash algorithms} are one-way functions. They take an input (which is often called a “message”) and return a fixed-size string of bytes. The size of the output stays the same no matter how large the input is. For instance, whether you use one letter or a full report, the output length will remain constant—this depends on the algorithm (such as 256 bits for SHA-256)~\cite{Hash-Algorithms}.
+    At their heart, \textbf{hash algorithms} are one-way functions. They take an input (which is often called a “message”) and return a fixed-size string of bytes. The size of the output stays the same no matter how large the input is. For instance, whether you use one letter or a full report, the output length will remain constant—this depends on the algorithm (such as 256 bits for SHA-256)~\cite{Introduction}.
 
     This unique trait makes hash functions highly useful when you need to condense or "fingerprint" large data sets efficiently. Users primarily use hashes for checking data integrity; they help confirm that information hasn’t been altered by comparing the current hash with the original one.
 
