@@ -23,9 +23,9 @@
 
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=gray,
     filecolor=magenta,      
-    urlcolor=cyan,
+    urlcolor=black,
     pdftitle={Cryptographic Hash Functions},
     pdfpagemode=FullScreen,
 }
@@ -50,7 +50,7 @@ Hash algorithms are essential in today’s world. They convert input data of any
 
 
     \subsection*{What is a Hash Algorithm?}
-    At their heart, \textbf{hash algorithms} are one-way functions. They take an input (which is often called a “message”) and return a fixed-size string of bytes. The size of the output stays the same no matter how large the input is. For instance, whether you use one letter or a full report, the output length will remain constant—this depends on the algorithm (such as 256 bits for SHA-256)~\cite{Introduction}.
+    At their heart, \textbf{hash algorithms} are one-way functions. They take an input (which is often called a “message”) and return a fixed-size string of bytes. The size of the output stays the same no matter how large the input is. For instance, whether you use one letter or a full report, the output length will remain constant—this depends on the algorithm (such as 256 bits for SHA-256)~\cite{Hash-Algorithms}.
 
     This unique trait makes hash functions highly useful when you need to condense or "fingerprint" large data sets efficiently. Users primarily use hashes for checking data integrity; they help confirm that information hasn’t been altered by comparing the current hash with the original one.
 
@@ -58,7 +58,7 @@ Hash algorithms are essential in today’s world. They convert input data of any
         \begin{enumerate}
             \item \textbf{Determinism}
             \newline
-            A hash algorithm is deterministic in nature. This means that if you have the same input, you will consistently obtain the same output. This feature is vital for things such as digital signatures and file checks because it guarantees that results are repeatable and reliable. If an algorithm gave different results for the same input, it wouldn’t be useful whatsoever in these situations.
+            A hash algorithm is deterministic in nature. This means that if you have the same input, you will consistently obtain the same output. This feature is vital for things such as digital signatures and file checks because it guarantees that results are repeatable and reliable. If an algorithm gave different results for the same input, it wouldn’t be useful whatsoever in these situations~\cite{Properties}.
 
             \item \textbf{Efficiency}
             \newline
@@ -83,7 +83,7 @@ Hash algorithms are essential in today’s world. They convert input data of any
 Hash algorithms primarily fall into two categories: \textbf{cryptographic hash functions} and \textbf{non-cryptographic hash functions}. Both types are important in computing, but they serve different purposes depending on the need for security.
 
     \subsection*{Cryptographic Hash Functions}
-    \textbf{ryptographic hash functions} serve a vital role in security applications. They are designed to provide secure and unique properties. These include collision resistance, pre-image resistance, and second pre-image resistance. Below are several widely-recognized cryptographic hash functions:
+    \textbf{ryptographic hash functions} serve a vital role in security applications. They are designed to provide secure and unique properties. These include collision resistance, pre-image resistance, and second pre-image resistance. Below are several widely-recognized cryptographic hash functions:~\cite{Cryptographic}
         \begin{enumerate}
             \item \textbf{SHA (Secure Hash Algorithm)}
             \newline
@@ -111,7 +111,7 @@ Hash algorithms primarily fall into two categories: \textbf{cryptographic hash f
         \end{itemize}
 
     \subsection*{Non-Cryptographic Hash Functions}
-    Non-cryptographic hash functions are built for efficiency and simplicity. These functions are beneficial where security isn’t critical, but performance is a priority. They play a key role in data structures like hash tables, where quick lookups are essential, and in algorithms that require fast hashing of keys.
+    Non-cryptographic hash functions are built for efficiency and simplicity. These functions are beneficial where security isn’t critical, but performance is a priority. They play a key role in data structures like hash tables, where quick lookups are essential, and in algorithms that require fast hashing of keys~\cite{non-Cryptographic}.
         \begin{enumerate}
             \item \textbf{MurmurHash}
             \newline
@@ -136,7 +136,7 @@ Hash algorithms primarily fall into two categories: \textbf{cryptographic hash f
 Hash algorithms are crucial components in many security and data management applications across various industries. Here are some important cases where they are highly useful.
 
         \subsection*{Data Integrity Verification}
-        A primary use of hash functions is checking \textbf{data integrity}. When files are downloaded or transferred, it is extremely important to ensure the data has not been altered or corrupted during the process. Hash algorithms create a unique "fingerprint" (hash value) of the file before it is sent out. Afterward, this hash value can be compared to the hash of the file that is received. If both hash values correspond, it confirms the file is complete and unchanged.
+        A primary use of hash functions is checking \textbf{data integrity}. When files are downloaded or transferred, it is extremely important to ensure the data has not been altered or corrupted during the process. Hash algorithms create a unique "fingerprint" (hash value) of the file before it is sent out. Afterward, this hash value can be compared to the hash of the file that is received. If both hash values correspond, it confirms the file is complete and unchanged~\cite{Integrity}.
 
         For instance, when downloading large software or ISO images, many websites display the hash value (such as a SHA-256 checksum). After downloading, individuals may compute the hash of the downloaded file and compare it with the original to ensure the data is intact.
 
@@ -152,7 +152,7 @@ Hash algorithms are crucial components in many security and data management appl
         This approach is frequently used to secure software downloads, verify backups, and check data consistency in distributed systems.
 
     \subsection*{Digital Signatures and Certificates}
-    Hash functions serve a crucial role in \textbf{digital signatures} and \textbf{digital certificates}. Both ensure that internet-based communication is secure. To create a digital signature, first a hash of the message or document is generated. This hash is then encrypted with the sender's private key. The recipient can verify the signature by decrypting it using the sender's public key. They compare it to the hash of the original message. If both hashes match, it demonstrates that the message is authentic and has not been altered.
+    Hash functions serve a crucial role in \textbf{digital signatures} and \textbf{digital certificates}. Both ensure that internet-based communication is secure. To create a digital signature, first a hash of the message or document is generated. This hash is then encrypted with the sender's private key. The recipient can verify the signature by decrypting it using the sender's public key. They compare it to the hash of the original message. If both hashes match, it demonstrates that the message is authentic and has not been altered~\cite{Digital-signatures}.
         \begin{itemize}
             \item \textbf{Digital certificates:} Digital certificates also utilize hashing. These certificates confirm the legitimacy of websites or services. Certificate Authorities (CAs) issue these certificates to prove authenticity. Each certificate includes a hash of the website's public key. In this manner, if someone attempts to impersonate the website, the hash will not match, protecting users from fraudulent or man-in-the-middle attacks.
         \end{itemize}
@@ -177,7 +177,7 @@ Hash algorithms are crucial components in many security and data management appl
         \begin{itemize}
             \item \textbf{Salting:} To enhance security further, some systems implement a method known as salting. In this method, a random value (the salt) is added to the password before hashing. This ensures that even if two users choose the same password, their resulting hashes will be different.
 
-            \item \textbf{Bcrypt and PBKDF2:} Specialized hashing algorithms like bcrypt and PBKDF2 are frequently used for password hashing. They are designed to be computationally intensive, making brute-force attempts significantly more difficult.
+            \item \textbf{Bcrypt and PBKDF2:} Specialized hashing algorithms like bcrypt and PBKDF2 are frequently used for password hashing. They are designed to be computationally intensive, making brute-force attempts significantly more difficult~\cite{Bcrypt}\cite{Bcrypt-2}.
 
         \end{itemize}
         By utilizing hashing for passwords, even if someone breaches a database, they must still expend considerable computational resources to reverse the hashes. This provides substantial protection against large-scale password theft attempts.
@@ -570,9 +570,8 @@ For developers and businesses alike, it is essential to select the right hash fu
     \small
     \bibliographystyle{unsrt}
     \makeatletter
-  \renewcommand\@biblabel[1]{#1.} 
+    \renewcommand\@biblabel[1]{#1.} 
     \bibliography{references}
-   
 \end{multicols}
 
 \end{document}

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1725896129.15829 "main.aux" "main.bbl" "main" 1725896130.14052 0
-  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/bibtex/bib/feupphdteses/references.bib" 1366811700 2206 985e03fb36d872d306e76cfacc160693 ""
+["bibtex main"] 1725899288.23711 "main.aux" "main.bbl" "main" 1725899289.22662 0
+  "./references.bib" 1725899224 1930 3f7843d379539ec730c36735030c7a07 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1725896129 225 ffb10ed817e9534815bf4e403c52832b "pdflatex"
+  "main.aux" 1725899288 601 778e1a3000f0becd630d90a132614f5f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1725896129.3148 "c:/Users/Lord/Desktop/Git/Article/HASH/main.tex" "main.pdf" "main" 1725896130.14083 0
+["pdflatex"] 1725899288.39519 "c:/Users/Lord/Desktop/Git/Article/HASH/main.tex" "main.pdf" "main" 1725899289.22699 0
   "C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725747275 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Lord/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725139274 24224574 dc7f1ddfa7aa0d1a39bc372d14d1d367 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc" 1256929440 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -34,6 +34,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr17.tfm" 1256929440 11948 fa976674f030491ad35532a8a1e37325 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr6.tfm" 1256929440 11836 e3b6ce3e601aec94f64a536e7f4224d5 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr8.tfm" 1256929440 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmri10.tfm" 1256929440 16968 1b588d0f410bd67a83eaecf8c64b2a43 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmtt10.tfm" 1256929440 1340 adaa94f9add991a099a6fc98bbb5f02c ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ts1-lmr10.tfm" 1256929440 1556 b86d923e6b2f9aab2e313098a95cb0b8 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
@@ -44,6 +45,7 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb" 1256929440 113634 9384aebdf26f9881e046a4b5574566db ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb" 1256929440 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb" 1256929440 122174 a2d5e73f396ddbeb3bdf5c79aea0993d ""
+  "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb" 1256929440 112593 fda2373ba4420af33949610de4c28fe8 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb" 1256929440 113227 d3d1adc024746ff57b20efba82c6d365 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -114,11 +116,11 @@
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Lord/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/Lord/Desktop/Git/Article/HASH/main.tex" 1725896066 60200 1fca28261e01d24af16f80bd028a969a ""
-  "main.aux" 1725896129 225 ffb10ed817e9534815bf4e403c52832b "pdflatex"
-  "main.bbl" 1725896129 52 0eba253fc001332e731e8aba3f23127b "bibtex main"
-  "main.out" 1725896129 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1725896066 60200 1fca28261e01d24af16f80bd028a969a ""
+  "c:/Users/Lord/Desktop/Git/Article/HASH/main.tex" 1725899285 60337 ab6970cd46218eb9e025a6792fde6018 ""
+  "main.aux" 1725899288 601 778e1a3000f0becd630d90a132614f5f "pdflatex"
+  "main.bbl" 1725899288 1725 6b91a5e269aa676602f9084c71ff31ac "bibtex main"
+  "main.out" 1725899288 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1725899285 60337 ab6970cd46218eb9e025a6792fde6018 ""
   (generated)
   "main.aux"
   "main.log"

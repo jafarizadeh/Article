@@ -1,3 +1,49 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Hash-Algorithms}
+Wahome Macharia.
+\newblock
+  \href{https://www.researchgate.net/publication/351837904_Cryptographic_Hash_Functions}{\newline
+  \textit{Cryptographic Hash Functions}}.
+
+\bibitem{Properties}
+Michal Rjasko.
+\newblock \href{https://eprint.iacr.org/2008/527.pdf}{\newline
+  \textit{Properties of Cryptographic Hash Functions}}.
+
+\bibitem{Cryptographic}
+Kelvin~W. Macharia.
+\newblock
+  \href{https://www.researchgate.net/publication/351837904_Cryptographic_Hash_Functions}{\newline
+  \textit{Cryptographic Hash Functions}}.
+
+\bibitem{non-Cryptographic}
+Thomas~Claesen Arish~Sateesan, Jelle~Biesmans.
+\newblock
+  \href{https://www.researchgate.net/publication/368398232_Optimized_algorithms_and_architectures_for_fast_non-cryptographic_hash_functions_in_hardware}{\newline
+  \textit{non-Cryptographic Hash Functions}}.
+
+\bibitem{Integrity}
+Al-Quds~University Mohammed~Jamoos.
+\newblock
+  \href{https://www.researchgate.net/publication/289378326_Data_Integrity_Mechanism_Using_Hashing_Verification}{\newline
+  \textit{Data Integrity Mechanism Using Hashing Verification}}.
+
+\bibitem{Digital-signatures}
+Dr.~K. Limniotis.
+\newblock
+  \href{https://www.dpa.gr/sites/default/files/2023-01/Appendix_8c.pdf}{\newline
+  \textit{Digital signatures}}.
+
+\bibitem{Bcrypt}
+David~Mazières Niels~Provos.
+\newblock \href{https://en.wikipedia.org/wiki/Bcrypt}{\newline \textit{Bcrypt
+  and PBKDF2}}.
+
+\bibitem{Bcrypt-2}
+David~Mazières Niels~Provos.
+\newblock
+  \href{https://cvsweb.openbsd.org/cgi-bin/cvsweb/src/lib/libc/crypt/bcrypt.c?rev=1.1&content-type=text/x-cvsweb-markup}{\newline
+  \textit{Bcrypt and PBKDF2}}.
 
 \end{thebibliography}

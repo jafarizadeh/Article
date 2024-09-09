@@ -209,6 +209,7 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.e
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmri10.tfm
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -228,5 +229,7 @@ INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pf
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\Lord\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
