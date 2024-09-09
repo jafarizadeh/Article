@@ -4,8 +4,8 @@ The top-level auxiliary file: masin.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-I found no \citation commands---while reading file masin.aux
 Database file #1: references.bib
+Warning--I didn't find a database entry for "title"
 You've used 0 entries,
             1791 wiz_defined-function locations,
             445 strings with 3518 characters,
@@ -47,4 +47,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 error message)
+(There was 1 warning)
