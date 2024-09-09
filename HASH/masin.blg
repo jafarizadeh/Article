@@ -5,10 +5,10 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-Warning--I didn't find a database entry for "title"
+Warning--I didn't find a database entry for "Hash-Algorithms"
 You've used 0 entries,
             1791 wiz_defined-function locations,
-            445 strings with 3518 characters,
+            447 strings with 3548 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
