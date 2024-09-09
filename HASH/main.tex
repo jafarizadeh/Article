@@ -183,7 +183,7 @@ Hash algorithms are crucial components in many security and data management appl
         By utilizing hashing for passwords, even if someone breaches a database, they must still expend considerable computational resources to reverse the hashes. This provides substantial protection against large-scale password theft attempts.
 
 \section*{The Evolution of Hash Algorithms}
-Hash algorithms have evolved significantly over time. As new vulnerabilities have emerged, more secure standards have been developed. Understanding this evolution is important, as it explains why some hash functions that were once widely adopted are now considered insecure, and why stronger algorithms, like \textbf{SHA-256}, are extensively used today.
+Hash algorithms have evolved significantly over time. As new vulnerabilities have emerged, more secure standards have been developed. Understanding this evolution is important, as it explains why some hash functions that were once widely adopted are now considered insecure, and why stronger algorithms, like \textbf{SHA-256}, are extensively used today~\cite{Evolution-of-Hash}.
 
     \subsection*{From MD5 to SHA-256:}
     \textbf{MD5} (Message Digest Algorithm 5) was one of the first cryptographic hash algorithms to be widely adopted. It was introduced in 1992 by Ron Rivest and produces a 128-bit hash value. Initially, it seemed secure enough for tasks such as digital signatures, file integrity checking, and password storage. However, advances in cryptanalysis soon exposed its weaknesses:
@@ -226,7 +226,7 @@ Hash algorithms have evolved significantly over time. As new vulnerabilities hav
 In cryptography, the security of a hash function depends on several key features that make it resistant to various types of attacks. Collision resistance and pre-image resistance (which also includes second pre-image resistance) are two fundamental concepts. These properties are essential for maintaining the integrity and security of systems that rely on hash algorithms.
 
     \subsection*{Collision Resistance}
-    A collision occurs when two distinct inputs produce the same hash output. A robust cryptographic hash function should make it extremely difficult to find such collisions. This concept is critically important. If attackers can generate two different inputs that result in the same hash value, it can compromise the integrity of systems that depend on hash algorithms, such as digital signatures, certificates, and data verification processes.
+    A collision occurs when two distinct inputs produce the same hash output. A robust cryptographic hash function should make it extremely difficult to find such collisions. This concept is critically important. If attackers can generate two different inputs that result in the same hash value, it can compromise the integrity of systems that depend on hash algorithms, such as digital signatures, certificates, and data verification processes~\cite{MD5-Attacks}.
 
     For example, imagine two files, one legitimate and the other malicious. If they produce the same hash, an attacker can substitute the legitimate file with the malicious one without altering the hash. This deceives the system into accepting the malicious file as authentic, thereby undermining the security assurances provided by the hash function, potentially leading to data breaches or other security incidents.
 
@@ -247,7 +247,7 @@ In cryptography, the security of a hash function depends on several key features
 
         \end{itemize}
 
-    Additionally, there is a concept known as second pre-image resistance. While related, it differs slightly. Second pre-image resistance ensures that if an input and its corresponding hash are known, it should be nearly impossible to find another distinct input that produces the exact same hash. This is critically important because it prevents attackers from fabricating new data that matches the hash of legitimate data.
+    Additionally, there is a concept known as second pre-image resistance. While related, it differs slightly. Second pre-image resistance ensures that if an input and its corresponding hash are known, it should be nearly impossible to find another distinct input that produces the exact same hash. This is critically important because it prevents attackers from fabricating new data that matches the hash of legitimate data~\cite{Preimage}.
 
         \subsubsection*{Why are Pre-image Resistance and Second Pre-image Resistance so important?}
             \begin{itemize}
@@ -270,7 +270,7 @@ In cryptography, the security of a hash function depends on several key features
 \section*{Future Trends in Hashing}
 As technology continues to evolve, so do the risks for cryptographic systems. Two key trends shaping the future of hashing include the emergence of post-quantum cryptography, which is being developed to resist potential quantum computing threats, and the introduction of new hash standards designed to address current limitations and improve security.
     \subsection*{Post-Quantum Cryptography}
-    Quantum computing has the potential to drastically transform the field of cryptography. Unlike classical computers, which use bits that represent either 0 or 1, quantum computers utilize qubits. These qubits can exist in multiple states simultaneously. This distinctive capability allows quantum computers to solve certain mathematical problems significantly more efficiently than classical computers. For instance, they could factor large numbers and compute discrete logarithms with much greater speed. Such abilities pose a substantial risk to many existing cryptographic algorithms, including those based on asymmetric methods such as RSA and ECC, and even some symmetric algorithms like hash functions.
+    Quantum computing has the potential to drastically transform the field of cryptography. Unlike classical computers, which use bits that represent either 0 or 1, quantum computers utilize qubits. These qubits can exist in multiple states simultaneously. This distinctive capability allows quantum computers to solve certain mathematical problems significantly more efficiently than classical computers. For instance, they could factor large numbers and compute discrete logarithms with much greater speed. Such abilities pose a substantial risk to many existing cryptographic algorithms, including those based on asymmetric methods such as RSA and ECC, and even some symmetric algorithms like hash functions~\cite{Post-Quantum}\cite{Post-Quantum-2}.
 
     \begin{itemize}
         \item \textbf{Impact on Current Hash Algorithms:} Hash functions, such as \textbf{SHA-256} and \textbf{SHA-3}, are thought to perform better against quantum attacks compared to traditional asymmetric algorithms. In classical settings, brute-force attacks on hash functions require testing every possible input, which takes time proportional to the size of the hash output. However, a quantum approach—using \textbf{Grover's algorithm}—can reduce the time needed to find a pre-image from $2^n$ to $2^{n/2}$ , where $n$ represents the number of bits in the hash output. For example, instead of requiring $2^{256}$ operations for a 256-bit hash like SHA-256, it might only require approximately $2^{128}$ operations. While this is still computationally challenging, it indicates that hash algorithms may need longer outputs or entirely new designs to remain secure against quantum threats.
@@ -287,7 +287,7 @@ As technology continues to evolve, so do the risks for cryptographic systems. Tw
         \newline
         In 2015, NIST introduced SHA-3 as part of the post-SHA-2 cryptographic standard. This algorithm differs from SHA-2 as it does not rely on the Merkle-Damgård structure. Instead, SHA-3 utilizes the Keccak algorithm, based on a unique design called the "sponge construction." The motivation for developing SHA-3 was not due to any immediate problems with SHA-2 but rather as a precautionary measure to prepare for potential vulnerabilities that may emerge in SHA-2 over time.
             \begin{itemize}
-                \item \textbf{Advantages of SHA-3:} SHA-3 offers greater flexibility and potential resistance against future cryptanalysis due to its distinctive structure. While SHA-2 is still widely used and considered secure, SHA-3 provides a promising alternative in case any unforeseen weaknesses in SHA-2 arise.
+                \item \textbf{Advantages of SHA-3:} SHA-3 offers greater flexibility and potential resistance against future cryptanalysis due to its distinctive structure. While SHA-2 is still widely used and considered secure, SHA-3 provides a promising alternative in case any unforeseen weaknesses in SHA-2 arise\cite{SHA-3-Keccak}.
 
             \end{itemize}
 
@@ -331,13 +331,13 @@ When developers and businesses select hash algorithms, they must carefully consi
 
             \item \textbf{Data Integrity and File Verification}
             \newline
-            In cases where security is not the primary focus—such as verifying data integrity—you can use faster hash functions like MD5 or SHA-1 for basic checksum needs. However, it is important to keep in mind that both \textbf{MD5} and \textbf{SHA-1} are vulnerable to collision attacks. Therefore, if there is even a possibility that additional security may be needed in thefuture, it is advisable to opt for \textbf{SHA-256}, even for integrity verification.
+            In cases where security is not the primary focus—such as verifying data integrity—you can use faster hash functions like MD5 or SHA-1 for basic checksum needs. However, it is important to keep in mind that both \textbf{MD5} and \textbf{SHA-1} are vulnerable to collision attacks. Therefore, if there is even a possibility that additional security may be needed in thefuture, it is advisable to opt for \textbf{SHA-256}, even for integrity verification~\cite{Integrity}.
                 \begin{itemize}
                     \item \textbf{Example:} When distributing software or files, providing the SHA-256 hash allows users to verify whether the file is intact and has not been altered during the download process.
 
                 \end{itemize}
 
-            \item \textbf{Non-Cryptographic Applications} In non-cryptographic contexts—such as hash tables, distributed systems, or load balancing—where speed and performance are critical, using non-cryptographic hash functions can significantly improve efficiency. Algorithms like \textbf{MurmurHash} or \textbf{FNV-1} are highly effective in these scenarios. These options are efficient and distribute data well, making them ideal for tasks like indexing, sharding, or load balancing.
+            \item \textbf{Non-Cryptographic Applications} In non-cryptographic contexts—such as hash tables, distributed systems, or load balancing—where speed and performance are critical, using non-cryptographic hash functions can significantly improve efficiency. Algorithms like \textbf{MurmurHash} or \textbf{FNV-1} are highly effective in these scenarios. These options are efficient and distribute data well, making them ideal for tasks like indexing, sharding, or load balancing~\cite{non-Cryptographic}.
             \begin{itemize}
                 \item \textbf{Example:} In a distributed database system, MurmurHash is often used to ensure the distribution of data evenly across different nodes, optimizing both retrieval and storage.
 
@@ -355,7 +355,7 @@ When developers and businesses select hash algorithms, they must carefully consi
 
             \item \textbf{Salting for Passwords}
             \newline
-            When storing hashed passwords, it is advisable to use a unique \textbf{salt}. A salt is a random string added to the password before hashing. This ensures that even if two users share the same password, their hash values will differ, mitigating risks in password databases.
+            When storing hashed passwords, it is advisable to use a unique \textbf{salt}. A salt is a random string added to the password before hashing. This ensures that even if two users share the same password, their hash values will differ, mitigating risks in password databases~\cite{salt}.
 
             \item \textbf{Chaining in Hash Tables}
             \newline
@@ -368,7 +368,7 @@ When developers and businesses select hash algorithms, they must carefully consi
         \end{enumerate}
 
     \subsection*{Performance vs. Security Trade-offs}
-    In various applications, developers must navigate the trade-off between strong security and optimal performance. This balance is particularly critical in real-time systems or high-throughput applications, where maintaining computational efficiency is essential.
+    In various applications, developers must navigate the trade-off between strong security and optimal performance. This balance is particularly critical in real-time systems or high-throughput applications, where maintaining computational efficiency is essential~\cite{Performance-vs-Security}.
         \begin{enumerate}
             \item \textbf{Performance-First Applications}
             \newline
@@ -401,7 +401,7 @@ When developers and businesses select hash algorithms, they must carefully consi
 Hash algorithms significantly influence the business landscape, affecting crucial decisions related to compliance, fraud prevention, and cost optimization. Understanding how these algorithms function in various business contexts can help organizations enhance operational efficiency, comply with regulations, and strengthen security.
 
     \subsection*{Compliance and Security Audits}
-    In today’s regulatory landscape, companies are required to adhere to strict data privacy and protection regulations, such as the \textbf{General Data Protection Regulation (GDPR)} in Europe and the \textbf{California Consumer Privacy Act (CCPA)} within the United States. Hash algorithms are vital tools that help organizations in meeting these compliance standards.
+    In today’s regulatory landscape, companies are required to adhere to strict data privacy and protection regulations, such as the \textbf{General Data Protection Regulation (GDPR)}~\cite{GDPR} in Europe and the \textbf{California Consumer Privacy Act (CCPA)}\cite{CCPA} within the United States. Hash algorithms are vital tools that help organizations in meeting these compliance standards.
         \begin{enumerate}
             \item \textbf{Data Anonymization:}
             \newline
@@ -426,7 +426,7 @@ Hash algorithms significantly influence the business landscape, affecting crucia
     \begin{enumerate}
         \item \textbf{Secure Payment Processing:}
         \newline
-        E-commerce platforms implement hash functions to protect payment data, such as credit card numbers and transaction details. When businesses hash sensitive payment information before storing or transmitting it, they ensure that even if attackers gain access to this data, retrieving the original information is rendered highly challenging. This method is particularly crucial for \textbf{tokenization} systems, where sensitive payment information is replaced by hashed tokens that are rendered valueless if intercepted.
+        E-commerce platforms implement hash functions to protect payment data, such as credit card numbers and transaction details. When businesses hash sensitive payment information before storing or transmitting it, they ensure that even if attackers gain access to this data, retrieving the original information is rendered highly challenging. This method is particularly crucial for \textbf{tokenization} systems, where sensitive payment information is replaced by hashed tokens that are rendered valueless if intercepted~\cite{tokenization}.
 
         \item \textbf{Preventing Data Tampering:}
         \newline
@@ -475,7 +475,7 @@ Hashing algorithms are employed across numerous industries to bolster security, 
     \begin{itemize}
         \item \textbf{Hashing in Git:}
         \newline
-        When a developer modifies a repository, Git generates a \textbf{SHA-1 hash} that includes the changes made, the files' content, commit messages, and metadata such as who made the changes and when. This hash serves as a unique identifier for each commit. Consequently, every commit is distinct and can be easily referenced.
+        When a developer modifies a repository, Git generates a \textbf{SHA-1 hash} that includes the changes made, the files' content, commit messages, and metadata such as who made the changes and when. This hash serves as a unique identifier for each commit. Consequently, every commit is distinct and can be easily referenced~\cite{git}.
         \par
         Additionally, the integrity of the repository is guaranteed. Any modification—whether intentional or accidental—will result in a different hash. This feature enables Git to detect any tampering or data corruption, enhancing Git’s reliability for managing collaborative software projects.
 
@@ -487,7 +487,7 @@ Hashing algorithms are employed across numerous industries to bolster security, 
     \end{itemize}
 
     \subsection*{Case Study 2: Blockchain and Bitcoin}
-    Blockchain technology underpins \textbf{Bitcoin} and other cryptocurrencies. It utilizes cryptographic hash functions to maintain integrity, protect transactions, and create consensus within distributed networks. Bitcoin's blockchain relies on \textbf{SHA-256}, a cryptographic hash algorithm, to perform several critical tasks:
+    Blockchain technology underpins \textbf{Bitcoin} and other cryptocurrencies. It utilizes cryptographic hash functions to maintain integrity, protect transactions, and create consensus within distributed networks. Bitcoin's blockchain relies on \textbf{SHA-256}, a cryptographic hash algorithm, to perform several critical tasks:~\cite{Blockchain-Bitcoin}
         \begin{itemize}
             \item \textbf{Mining and Proof of Work (PoW):}
             \newline
@@ -508,7 +508,7 @@ Hashing algorithms are employed across numerous industries to bolster security, 
         \begin{itemize}
             \item \textbf{How Dropbox Utilizes Hashing for Deduplication:}
             \newline
-            When a user uploads a file to Dropbox, the system generates a cryptographic hash of that file (using algorithms such as \textbf{SHA-256}). The system then compares this hash to the hashes of files already stored. If it finds an identical hash, Dropbox identifies the file as a duplicate and avoids storing the same data more than once. Instead, the system maintains a reference to the already existing file.
+            When a user uploads a file to Dropbox, the system generates a cryptographic hash of that file (using algorithms such as \textbf{SHA-256}). The system then compares this hash to the hashes of files already stored. If it finds an identical hash, Dropbox identifies the file as a duplicate and avoids storing the same data more than once. Instead, the system maintains a reference to the already existing file~\cite{Dropbox}\cite{Dropbox-2}.
             \par
             This strategy allows Dropbox to optimize storage space, particularly for large files like videos or backups that often contain redundant data. By using hashing and deduplication methods, Dropbox not only reduces storage costs but also enhances operational efficiency, all while guaranteeing a seamless user experience.
 
@@ -520,7 +520,7 @@ Hashing algorithms are employed across numerous industries to bolster security, 
 
 
     \subsection*{Case Study 4: LinkedIn and Password Security Breach}
-    In 2012, \textbf{LinkedIn} experienced a significant data breach, in which approximately 6.5 million user passwords were exposed. This incident revealed significant weaknesses in how LinkedIn stored passwords. They had hashed the passwords using \textbf{SHA-1} without any form of salting. As a result, attackers were able to use brute-force attacks and rainbow tables to decode the hashes and retrieve the original passwords.
+    In 2012, \textbf{LinkedIn} experienced a significant data breach, in which approximately 6.5 million user passwords were exposed. This incident revealed significant weaknesses in how LinkedIn stored passwords. They had hashed the passwords using \textbf{SHA-1} without any form of salting. As a result, attackers were able to use brute-force attacks and rainbow tables to decode the hashes and retrieve the original passwords~\cite{linkedin}\cite{linkedin-2}.
         \begin{itemize}
             \item \textbf{Lessons Learned:}
             \newline
@@ -529,22 +529,6 @@ Hashing algorithms are employed across numerous industries to bolster security, 
             \item \textbf{Impact on Business:}
             \newline
             This breach acted as a critical reminder for many organizations about the necessity of secure cryptographic hash algorithms and salting when storing passwords. The improvements LinkedIn made in password security helped restore user confidence. Additionally, it established a precedent for other companies handling sensitive user data.
-
-        \end{itemize}
-
-    \subsection*{Case Study 5: Amazon Web Services (AWS) and Cloud Integrity}
-    \textbf{Amazon Web Services (AWS)} is a leading cloud service provider that utilizes hash algorithms to maintain \textbf{data integrity} within their services, such as \textbf{Amazon S3} and \textbf{Amazon Glacier}, which are used for cloud storage. By leveraging these hashes, AWS ensures that data is stored and retrieved accurately, without any corruption or tampering.
-
-        \begin{itemize}
-            \item \textbf{How AWS Ensures Data Integrity:}
-            \newline
-            When users upload files to either Amazon S3 or Amazon Glacier, AWS generates a hash of the file, often using \textbf{MD5} or \textbf{SHA-256}. These hashes are stored in the metadata alongside the file. Later, when the file is retrieved, AWS re-computes the hash and verifies it against the stored version. This ensures that no corruption or issues have occurred during storage or transmission.
-            \par
-            Additionally, AWS provides \textbf{Server-Side Encryption (SSE)}, which uses cryptographic hashes to secure data at rest and during transmission. Thanks to this approach, sensitive customer information remains protected, even within large-scale cloud systems.
-
-            \item \textbf{Impact:}
-            \newline
-            By integrating hash functions for verifying data integrity and employing encryption methods, AWS provides businesses with strong security and trust in its cloud offerings. This is critically important for sectors such as finance, healthcare, and government, where maintaining data integrity and security is of paramount importance.
 
         \end{itemize}
 
