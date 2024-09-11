@@ -1,0 +1,150 @@
+\begin{thebibliography}{10}
+
+\bibitem{Hash-Algorithms}
+Wahome Macharia.
+\newblock
+  \href{https://www.researchgate.net/publication/351837904_Cryptographic_Hash_Functions}{\newline
+  \textit{Cryptographic Hash Functions}}.
+
+\bibitem{Properties}
+Michal Rjasko.
+\newblock \href{https://eprint.iacr.org/2008/527.pdf}{\newline
+  \textit{Properties of Cryptographic Hash Functions}}.
+
+\bibitem{Cryptographic}
+Kelvin~W. Macharia.
+\newblock
+  \href{https://www.researchgate.net/publication/351837904_Cryptographic_Hash_Functions}{\newline
+  \textit{Cryptographic Hash Functions}}.
+
+\bibitem{non-Cryptographic}
+Thomas~Claesen Arish~Sateesan, Jelle~Biesmans.
+\newblock
+  \href{https://www.researchgate.net/publication/368398232_Optimized_algorithms_and_architectures_for_fast_non-cryptographic_hash_functions_in_hardware}{\newline
+  \textit{non-Cryptographic Hash Functions}}.
+
+\bibitem{Integrity}
+Al-Quds~University Mohammed~Jamoos.
+\newblock
+  \href{https://www.researchgate.net/publication/289378326_Data_Integrity_Mechanism_Using_Hashing_Verification}{\newline
+  \textit{Data Integrity Mechanism Using Hashing Verification}}.
+
+\bibitem{Digital-signatures}
+Dr.~K. Limniotis.
+\newblock
+  \href{https://www.dpa.gr/sites/default/files/2023-01/Appendix_8c.pdf}{\newline
+  \textit{Digital signatures}}.
+
+\bibitem{Bcrypt}
+David~Mazières Niels~Provos.
+\newblock \href{https://en.wikipedia.org/wiki/Bcrypt}{\newline \textit{Bcrypt
+  and PBKDF2}}.
+
+\bibitem{Bcrypt-2}
+David~Mazières Niels~Provos.
+\newblock
+  \href{https://cvsweb.openbsd.org/cgi-bin/cvsweb/src/lib/libc/crypt/bcrypt.c?rev=1.1&content-type=text/x-cvsweb-markup}{\newline
+  \textit{Bcrypt and PBKDF2}}.
+
+\bibitem{Evolution-of-Hash}
+C.~Orglmeister F.~Pfautsch, N.~Schubert.
+\newblock
+  \href{https://dl.gi.de/bitstreams/37f9e22b-a8e9-4d01-98a2-40463cd0f1fb/download}{\newline
+  \textit{The Evolution of Secure Hash Algorithms}}.
+
+\bibitem{MD5-Attacks}
+T.~Highland J.~Black, M.~Cochran.
+\newblock
+  \href{https://www.researchgate.net/publication/220942558_A_Study_of_the_MD5_Attacks_Insights_and_Improvements}{\newline
+  \textit{A Study of the MD5 Attacks}}.
+
+\bibitem{Preimage}
+T.~Shrimpton P.~Rogaway.
+\newblock \href{https://eprint.iacr.org/2004/035.pdf}{\newline
+  \textit{Definitions, Implications, and Separations for Preimage Resistance,
+  Second-Preimage Resistance, and Collision Resistance}}.
+
+\bibitem{Post-Quantum}
+cryptovision.com.
+\newblock
+  \href{https://www.cryptovision.com/wp-content/uploads/2022/12/2022-12-16-Post-Quantum-Whitepaper-EN.pdf}{\newline
+  \textit{An Introduction to Post-Quantum Cryptography}}.
+
+\bibitem{Post-Quantum-2}
+Erik~Dahmen Daniel J.~Bernstein, Johannes~Buchmann.
+\newblock
+  \href{https://www.researchgate.net/profile/Nicolas-Sendrier-2/publication/226115302_Code-Based_Cryptography/links/540d62d50cf2df04e7549388/Code-Based-Cryptography.pdf}{\newline
+  \textit{Post-Quantum Cryptography}}.
+
+\bibitem{SHA-3-Keccak}
+Croatia Šibenik.
+\newblock \href{https://summerschool-croatia.cs.ru.nl/2015/SHA3.pdf}{\newline
+  \textit{Introduction to SHA-3 and Keccak}}.
+
+\bibitem{salt}
+Snigdha Acharya.
+\newblock
+  \href{https://informatics.nic.in/uploads/pdfs/0d5238d5_salted%20Hashing%20Passwords.pdf}{\newline
+  \textit{Salted Hashing of Passwords}}.
+
+\bibitem{Performance-vs-Security}
+Demetres~D.Kouvatsos Kabiru~M.Maiyama.
+\newblock
+  \href{https://www.researchgate.net/publication/338412345_Performance_vs_Security_Trade-Offs_Analysis_of_Virtualisation_in_IaaS_Cloud_Computing_Platforms}{\newline
+  \textit{Performance vs Security Trade-Offs Analysis of Virtualisation in IaaS
+  Cloud Computing Platforms}}.
+
+\bibitem{GDPR}
+epsu.org.
+\newblock
+  \href{https://www.epsu.org/sites/default/files/article/files/GDPR_FINAL_EPSU.pdf}{\newline
+  \textit{The General Data Protection Regulation (GDPR)}}.
+
+\bibitem{CCPA}
+Prof.~Eric Goldman.
+\newblock
+  \href{https://www.iadclaw.org/assets/1/7/24.1_-_Goldman-_REVIEWED-_2018_07_09_An_Introduction_to_the_California_Consumer_Privacy_Act_(CCPA).pdf}{\newline
+  \textit{An Introduction to the California Consumer Privacy Act (CCPA)}}.
+
+\bibitem{tokenization}
+Eerik Durejko.
+\newblock
+  \href{https://www.checkout.com/blog/payment-tokenization#:~:text=Payment%20tokenization%20is%20the%20process,significance%20outside%20of%20the%20transaction}{\newline
+  \textit{A guide to payment tokenization}}.
+
+\bibitem{git}
+git scm.com.
+\newblock \href{https://git-scm.com/docs/hash-function-transition}{\newline
+  \textit{Migrate Git from SHA-1 to a stronger hash function}}.
+
+\bibitem{Blockchain-Bitcoin}
+blockchainknowledge.in.
+\newblock
+  \href{https://blockchainknowledge.in/what-is-hash-function-sha-256-in-blockchain-technology/}{\newline
+  \textit{What is Hash Function SHA-256 in Blockchain Technology}}.
+
+\bibitem{Dropbox}
+blog.fosketts.net.
+\newblock
+  \href{https://blog.fosketts.net/2011/07/11/dropbox-data-format-deduplication/}{\newline
+  \textit{How Does Dropbox Store Data?}}
+
+\bibitem{Dropbox-2}
+M.~Janaki P.~Nirmala, S.~Murugan.
+\newblock
+  \href{https://ijeter.everscience.org/Manuscripts/Volume-4/Issue-3/Vol-4-issue-3-M-22.pdf}{\newline
+  \textit{Data Deduplication in Client Side Using Hash Technique}}.
+
+\bibitem{linkedin}
+Per Thorsheim.
+\newblock
+  \href{https://www.linkedin.com/pulse/linkedins-poor-handling-2012-data-breach-comes-back-haunt-thorsheim/}{\newline
+  \textit{LinkedIn's poor handling of 2012}}.
+
+\bibitem{linkedin-2}
+Jaikumar Vijayan.
+\newblock
+  \href{https://www.computerworld.com/article/1540158/hackers-crack-more-than-60-of-breached-linkedin-passwords.html}{\newline
+  \textit{Hackers crack more than 60\% of breached LinkedIn passwords}}.
+
+\end{thebibliography}
