@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  12 SEP 2024 02:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  12 SEP 2024 13:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -107,6 +107,11 @@ Chapter 2.
 
 ]
 Chapter 3.
+
+Overfull \hbox (3.26617pt too wide) in paragraph at lines 26--26
+[]\OT1/cmr/bx/n/14.4 Link-State Ac-knowl-edg-ment (LSAck) Packet 
+ []
+
 [9] [10
 
 ]
@@ -143,24 +148,67 @@ Chapter 11.
 
 ]
 Chapter 12.
-[27] (main.aux)
+[27] [28
+
+]
+Chapter 13.
+[29] [30
+
+]
+Chapter 14.
+[31] [32
+
+]
+Chapter 15.
+[33] [34
+
+]
+Chapter 16.
+[35]
+Overfull \hbox (4.55643pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/10 36 \OT1/cmr/m/sl/10 CHAPTER 16.  OSPF AND SDN (SOFTWARE-DEFINED NETWORKING)
+ []
+
+[36
+
+]
+Chapter 17.
+[37]
+Overfull \hbox (39.20815pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/10 38 \OT1/cmr/m/sl/10 CHAPTER 17.  CASE STUDIES AND REAL-WORLD OSPF IMPLEMENTATIONS
+ []
+
+[38
+
+]
+Chapter 18.
+
+Overfull \hbox (7.58945pt too wide) in paragraph at lines 120--120
+[]\OT1/cmr/bx/n/14.4 Evolution of OSPF in Software-Defined Net-
+ []
+
+[39] [40
+
+]
+Chapter 19.
+[41] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 764 strings out of 474486
- 13707 string characters out of 5744227
- 1938542 words of memory out of 5000000
- 23117 multiletter control sequences out of 15000+600000
- 561152 words of font info for 46 fonts, out of 8000000 for 9000
+ 762 strings out of 474486
+ 13678 string characters out of 5744227
+ 1939542 words of memory out of 5000000
+ 23115 multiletter control sequences out of 15000+600000
+ 560547 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,50p,237b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on main.pdf (27 pages, 98580 bytes).
+Output written on main.pdf (41 pages, 110364 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
+ 155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

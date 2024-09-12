@@ -5,117 +5,127 @@
 
 \tableofcontents
 
-\chapter{Introduction}
-    \section{What is Networking?}
-    \section{History of Networking}
-    \section{Importance of Networking}
-    \section{Overview of Network Types}
+\chapter{Introduction to OSPF Protocol}
+    \section{Overview of OSPF}
+    \section{History and Evolution of OSPF}
+    \section{Comparison with Other Routing Protocols}
+    \section{OSPF in Modern Networking}
     
-\chapter{Networking Basics}
-    \section{Network Topologies}
-        \subsection{Bus Topology}
-        \subsection{Star Topology}
-        \subsection{Ring Topology}
-        \subsection{Mesh Topology}
-        \subsection{Hybrid Topology}
-    \section{Types of Networks}
-        \subsection{Local Area Networks (LAN)}
-        \subsection{Wide Area Networks (WAN)}
-        \subsection{Metropolitan Area Networks (MAN)}
-        \subsection{Wireless Networks (WLAN, WWAN)}
-    \section{Network Devices}
-        \subsection{Hubs and Switches}
-        \subsection{Routers and Gateways}
-        \subsection{Modems}
-        \subsection{Firewalls}
-        
-\chapter{The OSI Model and TCP/IP Stack}
-    \section{Introduction to the OSI Model}
-    \section{The Seven Layers of OSI Model}
-        \subsection{Physical Layer}
-        \subsection{Data Link Layer}
-        \subsection{Network Layer}
-        \subsection{Transport Layer}
-        \subsection{Session Layer}
-        \subsection{Presentation Layer}
-        \subsection{Application Layer}
-    \section{TCP/IP Protocol Suite}
-        \subsection{Comparison with OSI Model}
-        \subsection{Layers in the TCP/IP Model}
-        \subsection{IP Protocols: IPv4 and IPv6}
-        
-\chapter{Networking Protocols}
-    \section{Introduction to Networking Protocols}
-    \section{Application Layer Protocols}
-        \subsection{HTTP/HTTPS}
-        \subsection{FTP}
-        \subsection{SMTP}
-        \subsection{DNS}
-    \section{Transport Layer Protocols}
-        \subsection{TCP}
-        \subsection{UDP}
-    \section{Network Layer Protocols}
-        \subsection{IP (Internet Protocol)}
-        \subsection{ICMP}
-        \subsection{ARP}
-        
-\chapter{Network Addressing and Routing}
-    \section{IP Addressing Basics}
-        \subsection{IPv4 Addressing}
-        \subsection{IPv6 Addressing}
-        \subsection{Subnetting}
-        \subsection{CIDR Notation}
-    \section{Static vs Dynamic Routing}
-    \section{Network Address Translation (NAT)}
+\chapter{Basics of Link-State Routing Protocols}
+    \section{Distance Vector vs Link-State Protocols}
+    \section{Graph Theory in Networking}
+    \section{Dijkstra's Algorithm and Its Application}
+    \section{Link-State Advertisements (LSAs)}
+    
+\chapter{OSPF Packet Types and Structures}
+    \section{OSPF Packet Overview}
+    \section{Hello Packet}
+    \section{Database Description (DBD) Packet}
+    \section{Link-State Request (LSR) Packet}
+    \section{Link-State Update (LSU) Packet}
+    \section{Link-State Acknowledgment (LSAck) Packet}
+    
+\chapter{OSPF Neighbor Discovery and Adjacency}
+    \section{OSPF Neighbor Relationships}
+    \section{Hello Protocol and Neighbor Discovery}
+    \section{Building Neighbor Adjacencies}
+    \section{States of OSPF Neighboring}
+    \section{OSPF Neighbor Authentication}
 
-\chapter{Routing Protocols}
-    \section{RIP}
-    \section{OSPF}
-    \section{EIGRP}
-    \section{BGP}
-    
-\chapter{Wireless Networking}
-    \section{Introduction to Wireless Networks}
-    \section{Wi-Fi Standards}
-    \section{Bluetooth and Zigbee}
-    \section{Mobile Networks (3G, 4G, 5G)}
-    \section{Security in Wireless Networks}
-    
-\chapter{Network Security}
-    \section{Introduction to Network Security}
-    \section{Common Security Threats}
-        \subsection{Malware}
-        \subsection{Denial of Service (DoS) Attacks}
-        \subsection{Man-in-the-Middle Attacks}
-    \section{Encryption and VPNs}
-    \section{Firewalls and Intrusion Detection Systems (IDS)}
-    \section{Security Protocols}
-        \subsection{SSL/TLS}
-        \subsection{IPSec}
-        \subsection{SSH}
+\chapter{OSPF Network Types and Topologies}
+    \section{Broadcast Networks}
+    \section{Non-Broadcast Multi-Access (NBMA) Networks}
+    \section{Point-to-Point Networks}
+    \section{Point-to-Multipoint Networks}
+    \section{Virtual Links}
 
-\chapter{Modern Networking Technologies}
-    \section{Software-Defined Networking (SDN)}
-    \section{Cloud Networking}
-    \section{Internet of Things (IoT)}
-    \section{Edge Computing}
+\chapter{OSPF Areas and Hierarchical Design}
+    \section{OSPF Areas: Concepts and Benefits}
+    \section{Backbone Area (Area 0)}
+    \section{Stub Areas}
+    \section{Totally Stubby Areas}
+    \section{Not-So-Stubby Areas (NSSA)}
+    \section{Inter-Area Routing and Summarization}
     
-\chapter{Network Management and Monitoring}
-    \section{Introduction to Network Management}
-    \section{SNMP (Simple Network Management Protocol)}
-    \section{Network Monitoring Tools}
-        \subsection{Wireshark}
-        \subsection{Nagios}
-        \subsection{Zabbix}
-        
-\chapter{Future Trends in Networking}
-    \section{The Role of AI in Networking}
-    \section{Quantum Networking}
-    \section{Next-Generation Internet Protocols}
+\chapter{LSA Types and Their Functions}
+    \section{Type 1: Router LSA}
+    \section{Type 2: Network LSA}
+    \section{Type 3: Summary LSA}
+    \section{Type 4: ASBR-Summary LSA}
+    \section{Type 5: External LSA}
+    \section{Type 7: NSSA External LSA}
     
-\chapter{Conclusion and Future Directions}
-    \section{Summary of Key Concepts}
-    \section{Challenges in Networking}
-    \section{The Future of Networking}
+\chapter{OSPF Database and Route Calculation}
+    \section{LSDB (Link-State Database)}
+    \section{Shortest Path First (SPF) Calculation}
+    \section{Routing Table Generation}
+    \section{OSPF Cost and Metric Calculation}
+    
+\chapter{OSPF Timers and Convergence}
+    \section{Hello and Dead Intervals}
+    \section{SPF Calculation Timer}
+    \section{LSA Generation and Ageing}
+    \section{Convergence Time in OSPF}
+    
+\chapter{OSPF Authentication and Security}
+    \section{Plaintext Authentication}
+    \section{MD5 Authentication}
+    \section{OSPFv3 and IPsec}
+    \section{Securing OSPF Neighbors and Routes}
+    
+\chapter{Advanced OSPF Features and Optimization}
+    \section{OSPF Route Redistribution}
+    \section{Route Filtering and Summarization}
+    \section{Equal-Cost Multi-Path (ECMP) in OSPF}
+    \section{OSPF Fast Reroute (FRR)}
+    \section{Graceful Restart in OSPF}
+
+\chapter{OSPF Troubleshooting}
+    \section{Debugging OSPF Neighbors and Adjacencies}
+    \section{OSPF LSAs: Problems and Solutions}
+    \section{SPF Calculation Issues}
+    \section{Convergence and Stability Issues}
+    \section{Analyzing OSPF Logs and Diagnostics}
+    
+\chapter{OSPFv2 vs OSPFv3}
+    \section{Differences Between OSPFv2 and OSPFv3}
+    \section{Address Families in OSPFv3}
+    \section{Multicast and OSPFv3}
+    \section{OSPFv3 Security Enhancements}
+    \section{Transitioning from OSPFv2 to OSPFv3}
+    
+\chapter{OSPF in IPv6 Networks}
+    \section{OSPFv3 for IPv6}
+    \section{Neighbor Discovery in OSPFv3}
+    \section{IPv6 Addressing and OSPFv3}
+    \section{OSPFv3 for Dual-Stack Networks}
+    
+\chapter{OSPF and MPLS}
+    \section{MPLS Overview}
+    \section{OSPF as IGP for MPLS Networks}
+    \section{Traffic Engineering with OSPF and MPLS}
+    
+\chapter{OSPF and SDN (Software-Defined Networking)}
+    \section{OSPF in SDN Environments}
+    \section{Integrating OSPF with OpenFlow}
+    \section{Challenges of OSPF in SDN Networks}
+
+\chapter{Case Studies and Real-World OSPF Implementations}
+    \section{OSPF in Enterprise Networks}
+    \section{OSPF in ISP Backbone Networks}
+    \section{OSPF in Data Center Environments}
+    \section{OSPF in Large-Scale Networks}
+
+\chapter{Future Trends in OSPF}
+    \section{Evolution of OSPF in Software-Defined Networks}
+    \section{OSPF in 5G and Beyond}
+    \section{OSPF in Cloud and Hybrid Environments}
+    
+\chapter{Appendices}
+    \section{Appendix A: OSPF Configuration Examples}
+    \section{Appendix B: OSPF Command Reference}
+    \section{Appendix C: OSPF RFCs and Standards}
+    \section{Appendix D: OSPF Performance Metrics}
+    \section{Appendix E: Glossary of OSPF Terms}
     
 \end{document}
