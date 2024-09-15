@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  9 SEP 2024 20:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.31)  15 SEP 2024 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -501,23 +501,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Lord/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [2]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 93.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 105.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3{C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 146.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 158.
  (C:\Users\Lord\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [4{C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}] [5] [6] [7] [8]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 276.
+(Font)              <10.95> on input line 288.
  [9{C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}] [10] [11]
-Overfull \hbox (3.52591pt too wide) in paragraph at lines 377--380
+Overfull \hbox (3.52591pt too wide) in paragraph at lines 389--392
 \OT1/lmr/m/n/10.95 Conversely, in security-critical sit-u-a-tions, the em-pha-sis should be on cryp-to-graphic strength
  []
 
 [12] [13]
-Overfull \hbox (3.28178pt too wide) in paragraph at lines 431--434
+Overfull \hbox (3.28178pt too wide) in paragraph at lines 443--446
 \OT1/lmr/m/n/10.95 Hash func-tions are crit-i-cal in sys-tems de-signed to com-bat fraud by en-sur-ing that data|such
  []
 
@@ -548,7 +548,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,976b,1133s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Lord/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (19 pages, 327355 bytes).
+Output written on main.pdf (19 pages, 328433 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
